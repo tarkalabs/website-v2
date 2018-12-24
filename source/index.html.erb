@@ -1,0 +1,209 @@
+---
+title: Welcome to Middleman,
+# <%= partial(:"./partials/header", :locals => {:title => "Custom Heading"}) %>
+---
+
+<%= partial "./partials/header" %>
+
+
+<div class="homepage">
+<div class="container">
+  <div class="hero">
+    <img src="/images/hero-image.png"/>
+    <div>
+      <h1><strong>We solve problems with science, art and code</strong></h1>
+      <h1>We <a href="">Help</a>, <a href="">Teach</a> and <a href="">Build</a> better software</h1>
+      <span class="inline">
+        <a href="/projects" class="btn btn-secondary">Browse Projects</a>
+        <a href="" class="btn btn-link">Contact us</a>
+      </span>
+    </div>
+  </div>
+  </div>
+
+  <div class="section projects">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Projects</h2>
+        <a href="/projects" class="btn btn-link">View all</a>
+      </div>
+
+      <div class="row">
+        <% projects = sitemap.resources.select {|r| r.data['category'] && r.data['category'].downcase == 'project'} %>
+        <% projects.sort_by{|p| p.data['order'] || 1000}.first(3).each do |project| %>
+          <a class="project-card" href="<%=project.url%>">
+            <img src="/images/projects/modus-t.png"/>
+            <h3><%=project.data['name']%></h3>
+            <p><%=project.data['short_desc']%></p>
+            <div>
+                <span>Built with</span>
+                <span><%=project.data['technologies']%></span>
+            </div>
+            <span class="btn btn-link">Read more</span>
+        </a>
+        <% end %>
+        </div>
+    </div>
+  </div>
+
+  <div class="section">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Talks</h2>
+      <a class="btn btn-link">View all</a>
+    </div>
+    </div>
+    <div class="talks">
+      <% data.talks.talks.each do |f| %>
+      <div class="talk-index">
+        <span class="talk-preview">
+          <div class="toggle-btns">
+            <span class="talk-prev"></span>
+            <span class="talk-next"></span>
+          </div>
+          <iframe src="<%= f.url %>" frameborder="0"></iframe>
+        </span>
+        <div>
+        <span class="talk-title">
+          <span class="talk-heading"><%= f.heading %></span>
+          <span class="talk-about"><%= f.description %></span>
+          <div>
+          <a href="" class="btn-link">Watch Video</a>
+          </div>
+        </span>
+        <span class="talk-by"><%= f.presenter %></span>
+        </div>
+      </div>
+      <% end %>
+
+      <div class="talk-index" />
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Blog</h2>
+        <a class="btn btn-link">View all</a>
+      </div>
+
+      <div class="row">
+          <% 3.times do |num| %>
+            <a class="blog-card" href="#">
+              <span class="img"></span>
+              <div class="blog-card-content">
+              <h3>Learn go series: Part V - Testing and API documentation</h3>
+              <div class="blog-info">
+                <div>
+                  <span><strong>By Gaurav</strong> on 21 Jan 2018</span>
+                  <span><i>Read time ~ 5 mins</i></span>
+                </div>
+                <div>
+                    <span class="img-holder" />              
+                  </div>
+                </div>
+              </div>
+            </a>
+          <% end %>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Testimonial</h2>
+        <a class="btn btn-link">View all</a>
+      </div>
+
+      <div class="testimonials">
+            <div class="who">
+              <span class="pic"></span>
+              <span class="count">3 / 10</span>
+            </div>
+            <div class="what">
+              <div class="toggle-btns">
+                <span class="talk-prev"></span>
+                <span class="talk-next"></span>
+              </div>
+              <div class="testi-quote">
+                <span class="name">Robinson Stacked</span>
+                <span class="position">Product designer at Nike</span>
+                <span class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus gravida quis blandit turpis cursus in hac habitasse. Eu scelerisque felis imperdiet proin. Mi bibendum neque egestas congue quisque egestas diam in arcu.</span>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container contact-us">
+      <div class="section-heading">
+        <h2>Contact us</h2>
+      </div>
+
+      <div class="address-holder">
+          <h4>India</h4>
+          <div class="address">
+            <address>
+              <strong>Chennai</strong><br/><br/>
+              #1, Kamatchipuram 2nd Street,<br/>
+              West Mambalam,<br/>
+              Chennai, TN, India, 600033<br/>
+              +91 44 4303 6522
+            </address>
+
+            <a class="btn btn-link">Open is map</a>
+          </div>
+
+          <div class="address">
+            <address>
+            <strong>Bangalore</strong><br/><br/>
+              # 579, 9th A Main road,<br/>
+              1st Stage Indira Nagar,<br/>
+              Bangalore, KA, India, 560038.
+            </address>
+
+            <a class="btn btn-link">Open is map</a>
+          </div>
+
+          <h4>USA</h4>
+
+          <div class="address">
+            <address>
+            <strong>San Jose</strong><br/><br/>
+
+              440 N. Wolfe Rd,<br/>
+              Sunnyvale, CA 94085<br/>
+              +1 (971) 270 – 6909
+            </address>
+
+            <a class="btn btn-link">Open is map</a>
+          </div>
+      </div>
+
+      <form>
+          <span><strong>Get Free Consultation</strong></span>
+
+          <label>Name</label>
+          <input type="text" name="name">
+
+          <label>Work Email</label>
+          <input type="email" name="email">
+
+          <label>Company Name</label>
+          <input type="text" name="orgName">
+
+          <label>Contact No</label>
+          <input type="tel" name="contactno">
+
+          <div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-link">Clear</button>
+          </div>
+      </form>
+    </div>
+  </div>
+
+
+</div>

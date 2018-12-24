@@ -1,0 +1,597 @@
+@import url("https://use.typekit.net/rlq6fqc.css");
+
+$BlackColor: #0d0a1a;
+$PrimaryColor: #23307e;
+$SecondaryColor: #e74525;
+$TertiaryColor: #7857a9;
+$LightColor: #f2e9df;
+$LighterColor: #ffffff;
+$SecSpace: 55px;
+$backgroundSize: 250px;
+
+html,
+body {
+  background-color: $LighterColor;
+  font-family: proxima-nova, sans-serif;
+  color: $BlackColor;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  // transition: all 0.2s ease;
+}
+
+::selection {
+  background: $SecondaryColor;
+  color: $LighterColor;
+}
+
+header {
+  margin: 20px 0 $SecSpace;
+
+  & > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .brand {
+      padding: 0;
+
+      & > img {
+        float: left;
+      }
+    }
+
+    & a {
+      padding: 15px;
+      text-decoration: none;
+      color: $BlackColor;
+
+      &:hover {
+        color: $SecondaryColor;
+      }
+    }
+  }
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+a {
+  color: $PrimaryColor;
+
+  &:focus,
+  &:hover {
+    color: $SecondaryColor;
+  }
+}
+
+span {
+  display: inline-block;
+}
+
+button.btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-family: proxima-nova, sans-serif;
+  outline: none;
+}
+
+.btn {
+  height: 50px;
+  padding: 15px;
+  text-decoration: none;
+  display: inline-block;
+
+  &.btn-primary {
+    background: $PrimaryColor;
+    color: $LighterColor;
+
+    &:hover {
+      color: $LighterColor;
+    }
+  }
+
+  &.btn-secondary {
+    background: $SecondaryColor;
+    color: $LighterColor;
+
+    &:hover {
+      color: $LighterColor;
+    }
+  }
+
+  &.btn-link {
+    position: relative;
+    color: $PrimaryColor;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      background: $PrimaryColor;
+      left: 15px;
+      right: 15px;
+      bottom: 13px;
+    }
+
+    &:hover {
+      color: $SecondaryColor;
+    }
+  }
+}
+
+.inline {
+  display: inline-block;
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 44px;
+  color: $BlackColor;
+  line-height: 52px;
+  margin: 0 0 25px;
+
+  & > strong {
+    font-weight: bold;
+  }
+
+  & > a {
+    color: $BlackColor;
+    position: relative;
+    text-decoration: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      height: 8px;
+      opacity: 0.4;
+      background: #ffbc00;
+      transition: all 0.1s;
+    }
+
+    &:hover {
+      color: $BlackColor;
+
+      &::after {
+        height: 68%;
+      }
+    }
+  }
+}
+
+h2 {
+  font-weight: lighter;
+  font-size: 32px;
+  color: $BlackColor;
+  margin: 0 0 25px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 22px;
+  color: $BlackColor;
+  margin: 0 0 0;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 20px;
+  color: $BlackColor;
+  margin: 0 0 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.homepage {
+  & .hero {
+    margin: 0 0 $SecSpace;
+
+    & > img {
+      max-width: 58%;
+      margin-right: 2%;
+      margin-top: -65px;
+    }
+
+    & > div {
+      max-width: 40%;
+      float: right;
+    }
+  }
+
+  & .section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  & .projects {
+    background: #f5f6f8;
+
+    & .container > div {
+      & .project-card {
+      }
+    }
+  }
+
+  & .talks {
+    display: flex;
+    overflow: auto;
+
+    & > .talk-index {
+      min-width: 870px;
+      margin-right: 30px;
+
+      &:first-child {
+        margin-left: calc((100vw - 1170px) / 2);
+      }
+
+      & span {
+        display: inline-block;
+      }
+
+      & > .talk-preview {
+        width: 100%;
+        height: 572px;
+        background: #ffffff;
+        border: 1px solid $LightColor;
+        box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.05);
+        position: relative;
+
+        & > iframe {
+          width: 100%;
+          height: 100%;
+        }
+
+        & > .toggle-btns {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+      }
+
+      & .talk-title {
+        margin-left: 100px;
+        max-width: 570px;
+        margin-top: -65px;
+        position: relative;
+        z-index: 3;
+
+        & .talk-heading {
+          font-weight: 800;
+          font-size: 48px;
+          color: #0d0a1a;
+          line-height: 61px;
+          margin-bottom: 25px;
+        }
+        & .talk-about {
+          max-width: 520px;
+          margin-bottom: 25px;
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+      & .talk-by {
+        font-weight: bold;
+        position: relative;
+        padding-left: 15px;
+        float: right;
+        min-width: 135px;
+        margin: 15px 0 0;
+
+        &:before {
+          content: "";
+          position: absolute;
+          background: url("/images/sprite.svg") no-repeat -122px -22px;
+          width: 7px;
+          height: 7px;
+          background-size: $backgroundSize;
+          top: 8px;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+.toggle-btns {
+  background: $LightColor;
+  height: 65px;
+  display: inline-block;
+
+  & > .talk-prev,
+  & > .talk-next {
+    width: 65px;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      background: url("/images/sprite.svg") no-repeat;
+      width: 50px;
+      height: 50px;
+      background-size: $backgroundSize;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  & > .talk-prev:after {
+    background-position: -50px 0px;
+  }
+  & > .talk-next:after {
+    background-position: -150px 0px;
+  }
+}
+
+.talk-index {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  & .talk-card {
+    min-width: 367px;
+    flex: 1;
+    max-width: auto;
+
+    & iframe {
+      width: 100%;
+      height: 240px;
+      margin: 0 0 10px;
+    }
+  }
+}
+
+.blog-card {
+  & h3 {
+    font-weight: bold;
+    font-size: 25px;
+    color: $BlackColor;
+    line-height: 35px;
+    max-width: 280px;
+    margin: 0 0 10px;
+  }
+  & .img {
+    background: $LightColor;
+    width: 370px;
+    height: 245px;
+    display: inline-block;
+    margin: 0;
+  }
+  & .blog-card-content {
+    margin: -40px 25px 0;
+
+    & .blog-info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      & i {
+        width: 100%;
+        display: inline-block;
+      }
+
+      & .img-holder {
+        display: inline-block;
+        width: 55px;
+        height: 55px;
+        background: $LightColor;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.testimonials {
+  max-width: 970px;
+  margin: 0 auto;
+
+  & .who {
+    display: inline-block;
+
+    & .pic {
+      display: inline-block;
+      width: 570px;
+      height: 375px;
+      background: $LightColor;
+      float: left;
+    }
+    & .count {
+      transform: rotate(90deg);
+      font-weight: bold;
+      font-size: 16px;
+      color: $BlackColor;
+      margin: 11px 0 0;
+    }
+  }
+  & .what {
+    float: right;
+
+    & .toggle-btns {
+    }
+    & .testi-quote {
+      background: $TertiaryColor;
+      padding: 30px;
+      width: 570px;
+      position: relative;
+      float: right;
+      margin: -100px 0 0;
+
+      &::before {
+        content: "";
+        background: url("/images/sprite.svg") no-repeat -209px -60px;
+        width: 35px;
+        height: 30px;
+        background-size: $backgroundSize;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        opacity: 0.25;
+      }
+
+      & .name {
+        color: $LighterColor;
+        font-size: 18px;
+        font-weight: bold;
+        display: inline-block;
+        width: 100%;
+        line-height: 24px;
+      }
+      & .position {
+        font-size: 16px;
+        color: $BlackColor;
+        line-height: 24px;
+      }
+      & .quote {
+        font-family: skolar-latin, serif;
+        font-size: 18px;
+        color: $LighterColor;
+        line-height: 27px;
+        margin: 20px 0 0;
+      }
+    }
+  }
+}
+
+.contact-us {
+  & .address-holder {
+    width: 50%;
+    display: inline-block;
+    float: left;
+
+    & .address {
+      display: inline-block;
+      min-width: 270px;
+      margin: 0 0 $SecSpace;
+      vertical-align: top;
+
+      & address {
+        font-style: normal;
+      }
+
+      & .btn-link {
+        padding-left: 0;
+        padding-right: 0;
+
+        &::after {
+          left: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+  & form {
+    width: 50%;
+    background: $LighterColor;
+    border: 1px solid $LightColor;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: inline-block;
+
+    & > span {
+      display: inline-block;
+      width: 100%;
+      margin: 0 0 30px;
+    }
+
+    & > label,
+    & > input {
+      height: 30px;
+      margin: 0 0 20px;
+      font-size: 16px;
+      padding: 5px 0;
+    }
+
+    & > label {
+      width: 40%;
+      float: left;
+    }
+    & > input {
+      width: 60%;
+      border: none;
+      border-bottom: 1px solid $BlackColor;
+      outline: none;
+    }
+
+    & .btn {
+      float: right;
+    }
+  }
+}
+
+.project-card,
+.talk-card,
+.blog-card {
+  max-width: 367px;
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-decoration: none;
+  color: $BlackColor;
+  vertical-align: top;
+
+  &:hover {
+    & p,
+    span {
+      color: initial;
+    }
+
+    & .btn-link {
+      color: $SecondaryColor;
+
+      &::after {
+        background: $SecondaryColor;
+      }
+    }
+  }
+
+  & .btn-link {
+    padding-left: 0;
+    padding-right: 0;
+
+    &::after {
+      left: 0;
+      right: 0;
+    }
+  }
+
+  & > img,
+  & > h3,
+  & > span {
+    margin: 0 0 10px;
+  }
+
+  & > p {
+    margin: 0 0 15px;
+  }
+}
+
+.section {
+  padding: $SecSpace 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.page {
+}
+
+.row {
+  margin: 0 -15px;
+}

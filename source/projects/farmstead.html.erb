@@ -1,0 +1,30 @@
+---
+category: project
+name: Farmstead
+technologies: Ruby, Rails, React, Javascript
+short_desc: App stabilization, Refactoring and Enhancements of the complete E-commerce system.
+---
+
+<% content_for :about do %>
+  <p>Farmstead is an farm to fridge grocery delivery startup that aims to reduce food wastage by employing AI solutions for optimized inventory and deliveries</p>
+
+  <p>As Farmstead was a fast moving startup, we had to iterate the product at much faster pace. The main challenge was to help identify bottlenecks and refactor the problem areas while at the same time continue delivering the features. As such, we had to come up with a plan to make small refactorings by which it doesn't require a block of time and at the same time easy for other developers to adapt and fix things on every feature development (<%= link_to "Boy scout rule", "https://martinfowler.com/bliki/OpportunisticRefactoring.html", target: "_blank" %>). 
+  Our first focus was to set some standards which are flexible enough to continue delivering the features but at the same time easy enough to adapt for new features. Basically, the changes had to be accommodating to different styles and standards in the same codebase.</p>
+
+  <p>We begun by streamlining the unit and end-to-end tests by setting up factories and helper methods to use for new features.</p>
+
+  <p>We then started with re-organizing their front-end codebase into a proper react application and set standards for the codebase. We also helped re-shape the complete end-to-end shopping experience for the user. In addition to that, we integrated Redux into the react app and prepped it to be easily separated to a separate project on it's own from the monolith it was under.</p>
+
+  <p>We also helped organize the organization of CSS styles into proper stylesheets and improved consistency of the front-end experience across the application.</p>
+
+  <p>We initiated refactoring of the backend by properly separting JSON serving endpoints and HTML serving endpoints. And also moving the JSON serving endpoints to be more explicit in the responses it is serving, which helped identify endpoints where unnecessary data were being sent and helped reduce the response time.</p>
+
+  <p>We moved into module based system and refactored lots of code into it's separate modules both on front-end and backend which helped in reducing duplication.</p>
+
+  <p>In addition to all this, we delivered some important features for the application including but not limited to migrating the application from one location to serve multiple locations, streamlined the Driver allocation systems and optimized the routing system to reduce driving time and increase driver occupancy. We also helped automating different aspects of the Warehouse management to speed up shelf to pack time.</p>
+
+<% end %>
+
+<% content_for :members do %>
+  <div>Sudhakar, Vinoth, Deepak</div>
+<% end %>

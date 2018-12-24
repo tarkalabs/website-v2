@@ -1,0 +1,21 @@
+---
+category: project
+name: GE Digital Services
+technologies: IoT, Raspberry Pi, Python, Go
+short_desc: RaspberryPi powered shop floor tool cart, NFC tags and reader integration with Python, BLE for location sensing, Node.js based dashboard
+order: 3
+---
+
+<% content_for :about do %>
+  <h3>SmartCrib</h3>
+  <p>
+  SmartCrib allows floor managers to manage and track the real time position of tools used in CNC machines and the location of the carts on the production line.
+  </p>
+  <p>
+  We added NFC tags to each of the tools and drills used in the CNC machines and placed NFC readers on the tools receptacle on the crib and the cart. The data from the NFC tags are fed back to the central system via a raspberry pi. Raspberry Pi also reads signal strengths from BLE beacons placed alongside each machine bay. We then visualize the tool position and its contents using a web app built on Golang and React.
+  <br/>
+<% end %>
+
+<% content_for :members do %>
+  <div>Gaurav Agarwal, Rajiv Manivannan</div>
+<% end %>

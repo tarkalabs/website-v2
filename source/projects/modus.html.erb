@@ -1,0 +1,37 @@
+---
+category: project
+name: Modus
+technologies: React, ImmutableJS, Rails, Sidekiq, RabbitMQ, HTML5, Javascript, PostgreSQL
+short_desc: React based fleet management solution, Trip simulator, Insurance telematics
+order: 1
+---
+
+<% content_for :about do %>
+  <p>
+  <a href="https://mod.us" target="_blank"/>Modus</a> powers the world’s most advanced and innovative vehicle tracking system for insurers, fleet managers and businesses that rely on superior driver and vehicle performance.
+  </p>
+  <p>
+  We helped Modus rearchitect their inventory management and the white labeled CRM platform. As Modus grew, it needed its infrastructure to scale. We helped Modus process and report on millions of trips taken by their customers. We used PostgreSQL to shard the trips database to improve the performance of the reporting infrastructure. As the business spread to multiple geographies increasing a demand on the reliability of the inventory service, we migrated it from a pure HTTP based microservice written in Rails to a RabbitMQ based system to improve its reliability and handle the changes to the inventory service without affecting the upstream systems.
+  </p>
+  <p>
+  We also added unit tests to the codebase and moved it from Rails 3 to Rails 4. We helped setup running tests on CircleCI and automated the deployment with Capistrano. We also setup a build monitor to serve as an information radiator. We helped in turning parts of the API written with Rails and Grape to Elixir and Phoenix.
+  </p>
+  <p>
+  We then built the UI for their flagship <a href="https://shop.mod.us/shop" target="_blank">Zephyr</a> fleet management platform. We used React, ImmutableJS and Immstruct to build a high performance UI that integrates Google Maps, SVG and Canvas for charting and reports and websockets for live driver tracking. We also helped build a lot of utility apps that simulated driving based on past trips to easily test and demo the user interface.
+  </p>
+<% end %>
+
+<% content_for :members do %>
+  Vagmi, Dhruva, Deepak, Gaurav, Sudhakar
+<% end %>
+
+<% content_for :articles do %>
+  <div>
+    <ul>
+      <li><a target="_blank" href="/blog/2015/04/14/creating-pivot-tables-with-postgres.html">Pivot tables with PostgreSQL</a></li>
+      <li><a target="_blank" href="/blog/2015/04/16/managing-big-enough-data-in-postgres.html">Managing big enough data with PostgreSQL</a></li>
+      <li><a target="_blank" href="/blog/2015/04/21/list-comprehension-in-ruby.html">List comprehensions in Ruby</a></li>
+      <li><a target="_blank" href="/blog/2015/04/21/list-comprehension-in-ruby.html">Experience report with Clojure</a></li>
+    </ul>
+  </div>
+<% end %>

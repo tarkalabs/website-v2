@@ -1,0 +1,42 @@
+<%= partial "./partials/header" %>
+
+
+<% wrap_layout :layout do %>
+<div class="page">
+    <div class="container">
+      <div class="section-heading">
+        <h1><%= current_page.data.name %></h1>
+      </div>
+
+      <div>
+        <%= yield_content :about %>
+      </div>
+
+      <div>
+        <h4>Members</h4>
+        <%= yield_content :members %>
+        <hr/>
+        <h4>Technologies Used</h4>
+        <div>
+          <% technology_links(current_page.data['technologies']).each do |name, url| %>
+            <% if url %>
+              <a href="<%=url%>"><%=name%></a>
+            <% else %>
+              <%=name%>
+            <% end %>
+            <span class="comma-separator">,</span>
+          <% end %>
+        </div>
+
+        <% if content_for?(:articles) %>
+          <hr/>
+          <% if yield_content(:articles) %>
+          <h4>Related Posts</h4>
+          <%= yield_content :articles %>
+          <% end %>
+        <% end %>
+      </div>
+
+  </div>
+</div>
+<% end %>

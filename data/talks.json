@@ -1,0 +1,81 @@
+{
+    "talks": [{
+            "url": "https://www.youtube.com/embed/iIhWNEuLCyc",
+            "presenter": "Vagmi",
+            "heading": "Kubernetes for Application Developers",
+            "description": "A quick introduction to kubernetes using minikube and kubectl. There are a lot of good visual introductions so I thought of creating a screencast to highlight some of the aspects of kubernetes."
+        },
+        {
+            "url": "https://www.youtube.com/embed/HNjAgkybAdQ",
+            "presenter": "Naren",
+            "heading": "Concurrency Vs Parallelism",
+            "description": "A good code should use resources efficiently, which means not over utilise them as well as not leaving them idle. Main feature of Python3 is its async capabilities. After learning what concurrency is and why concurrency is not parallelism."
+        },
+        {
+            "url": "https://www.youtube.com/embed/6ce54mscaKo",
+            "presenter": "Vagmi",
+            "heading": "Thinking in Go",
+            "description": "n the course of working with Go, there are certain things you only learn along the way. This talk will walk you through such tips & tricks and help you in becoming a better Go developer."
+        },
+        {
+            "url": "https://www.youtube.com/embed/-kOJGY0M9kM",
+            "presenter": "Sudhakar",
+            "heading": "Concurrency Comparison: Go Vs Erlang",
+            "description": "Both Golang Goroutines and Erlang processes are based on Communicating Sequential Processes with subtle differences in the way they are implemented."
+        },
+        {
+            "url": "https://www.youtube.com/embed/cdJXW2Q_CJo",
+            "presenter": "Vagmi",
+            "heading": "Building GraphQL Servers in Go",
+            "description": ""
+        },
+        {
+            "url": "https://www.youtube.com/embed/wW3LtFoybvM",
+            "presenter": "Sudhakar",
+            "heading": "Better Ruby on Rails - Phoenix Framework",
+            "description": "An introductory talk about Phoenix Framework that also compares it with the popular Ruby on Rails that helps the RoR developers to start learning Phoenix Framework"
+        },
+        {
+            "url": "https://www.slideshare.net/slideshow/embed_code/key/3n2wUUKX2yV3EJ",
+            "presenter": "Dhruva",
+            "heading": "WebRTC Landscape",
+            "description": ""
+        },
+        {
+            "url": "https://www.youtube.com/embed/c-1miN1WZgo",
+            "presenter": "Gaurav",
+            "heading": "React Apps with a Brain",
+            "description": ""
+        },
+        {
+            "url": "https://www.youtube.com/embed/GvQT5wiOKR0",
+            "presenter": "Vagmi",
+            "heading": "UI as a pure function of state - JSChannel 2016",
+            "description": ""
+        },
+        {
+            "url": "https://www.youtube.com/embed/zm36gpxwKPk?list=PLVbkwm50L3Yxy2LcthD8ln3JfvWVdF7Am",
+            "presenter": "Vagmi",
+            "heading": "Statically Typed Ruby - Crystal - RubyConfIndia 2016",
+            "description": ""
+        },
+        {
+            "url": "https://www.youtube.com/embed/fb44xcwHx0U?list=PLVbkwm50L3Yxy2LcthD8ln3JfvWVdF7Am",
+            "presenter": "Vagmi",
+            "heading": "FP on your browser - PureScript",
+            "description": ""
+        },
+        {
+            "url": "https://www.youtube.com/embed/LOJS4weW5u4?list=PLVbkwm50L3Yxy2LcthD8ln3JfvWVdF7Am",
+            "presenter": "Vagmi",
+            "heading": "Functional Reactive Programming with Elm",
+            "description": ""
+        },
+        {
+            "url": "https://www.youtube.com/embed/NBgYLPA0qO4",
+            "presenter": "Vagmi",
+            "heading": "ClojureScript and Om - Functional Programming in the browser",
+            "description": ""
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+---
+category: project
+name: CaratLane
+technologies: Ruby, Rails, Clojure, HTML5, Javascript, CSS, Docker, Oracle, Jenkins
+short_desc: Page load optimization, Magento integration with the Rails frontend, Mithril based isomorphic shopfront
+order: 5
+---
+
+<% content_for :about do %>
+  <p>
+  <a href="http://wwww.caratlane.com" target="_blank">CaratLane</a> sells jewellery online and via their mobile apps.
+  </p>
+  <h4>Page Load Optimization</h4>
+  <p>
+  While, CaratLane had a very designed page built by designers it had a sub-optimal load time on 3G connections. Given that most of CaratLane's traffic comes from facebook ads and by people who are on 3G or equivalent connections, we needed to optimize for the page load time. CaratLane uses a responsive design and was its HTML and CSS was primarily built by graphic designers who optimized for the site to look good at the cost of performance. We used a variety of techniques to make the page load 400% faster without any change to the visual design. Some of the techniques we used were.
+  </p>
+  <ul>
+    <li>Image compression with pngquant</li>
+    <li>Using google tag manager to defer loading non-essential javascript</li>
+    <li>Switching to CDN for loading static assets</li>
+    <li>Separate library and app bundles for both CSS nad JS with sprockets</li>
+    <li>Render the mithril powered sections of the page on the server with node.js and cache it with Redis</li>
+  </ul>
+  <h4>Integrating with the ERP system</h4>
+  <p>
+  Being an ecommerce company that also makes their own jewellery in a just-in-time fashion, CaratLane needed to integrate its virtual storefront with a more traditional ERP server running on Oracle. The CaratLane storefront itself had evolved over time from a simple Magento setup to a complex Magento setup with gnarly modules that depended on the EAV storage.
+  </p>
+  <p>
+  CaratLane had already started the migration from their existing Magento system to Rails for the storefront to support custom features such as promotions, granular discounts on specific product lines like solitaires and so on. They also had started implementing Search with ElasticSearch.
+  </p>
+  <p>
+  We helped CaratLane with integrating their backend ERP system written on Oracle to setup dynamic pricing, product line and SKU generation etc. We also cleaned up a lot of the existing Rails codebase by adding tests and settting up a CI environment with Jenkins and automate deployments with Capistrano.
+  </p>
+  <h4>General Coaching</h4>
+  <p>
+  In addition to contributing on the delivery these components, we also helped in coaching their developers on writing clean modular code, writing unit tests and the practice of TDD, guide their teams on effective pairing strategies such as pair rotation, driver-navigator stratgegies like ping-pong pairing etc. We directly worked with the office of the CTO and even helped them interview candidates for their VP of Engineering position.
+  </p>
+<% end %>
+
+<% content_for :members do %>
+  <div>Deepak, Sudhakar</div>
+<% end %>
+<% content_for :articles do %>
+  <div>
+    <ul>
+      <li><a href="https://github.com/tarkalabs/clojure-sidekiq">Write to Sidekiq queues with Clojure</a></li>
+    </ul>
+  </div>
+<% end %>

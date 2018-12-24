@@ -1,0 +1,33 @@
+---
+title: Welcome to Middleman
+---
+
+<%= partial "./partials/header" %>
+
+
+<div class="page">
+    <div class="container">
+      <div class="section-heading">
+        <h1>Projects</h1>
+        <p>
+          We have been privileged to work with the following companies on their projects. We have helped them ship solutions, provided training and provide consultation on best practices on how to structure their teams and solve difficult technology problems.
+        </p>
+      </div>
+
+      <div class="row">
+        <% projects = sitemap.resources.select {|r| r.data['category'] && r.data['category'].downcase == 'project'} %>
+        <% projects.sort_by{|p| p.data['order'] || 1000}.each do |project| %>
+          <a class="project-card" href="<%=project.url%>">
+            <img src="/images/projects/modus-t.png"/>
+            <h3><%=project.data['name']%></h3>
+            <p><%=project.data['short_desc']%></p>
+            <div>
+                <span>Built with</span>
+                <span><%=project.data['technologies']%></span>
+            </div>
+            <span class="btn btn-link">Read more</span>
+        </a>
+        <% end %>
+        </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+---
+category: project
+name: Glydel
+technologies: Python, Django, PostgreSQL, Webpack
+short_desc: Django and Python based vehicle tracking and fleet management solution.
+---
+
+<% content_for :about do %>
+  <p>
+  <a href="http://glydel.io" target="_blank">Glydel</a> provides a fleet tracking solution for taxi companies in India.
+  </p>
+  <p>
+  While scaling glydel from small fleet operators to big fleet owners who had 500+ vehicles, Glydel faced performance problems amidst a surprise attrition. We helped Glydel by optimizing their database queries by driving queries from google map's bounding boxes and nearby location queries using the <a href="https://www.postgresql.org/docs/9.2/static/btree-gist.html">btree-gist</a> index which implements the distance operator (<pre>&lt;-&lt;</pre>).
+  </p>
+  <p>
+  We also moved their old jQuery based application to structured React.js based app and used Webpack for asset compilation.
+  </p>
+<% end %>
+
+<% content_for :members do %>
+  <div>Divyanshu, Deepak</div>
+<% end %>

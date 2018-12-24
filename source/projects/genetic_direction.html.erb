@@ -1,0 +1,34 @@
+---
+category: project
+name: Genetic Direction
+technologies: Ruby, HexaPDF, PrawnPDF, Rails, ImageMagick
+short_desc: PDF engine development that generates on-demand reports for the user profiles
+order: 2
+---
+
+<% content_for :about do %>
+  <p>Genetic Direction came to us with a requirement to generate 40-50 page PDF reports with lots graphics and dynamic content 
+  based on the given user profile data. And they wanted the solution in ruby as they are a ruby shop.</p>
+  <p>We did the initial analysis to find the feasibility of their requirements and were pleasantly surprised 
+  by HexaPDF and Prawn ruby gems. </p>
+  <p>Based on our findings, we built the PDFEngine as a ruby gem with 99.7% unit test coverage</p>
+  <p>To make sure the generated PDFs are pixel perfect, We built a small snapshot testing tool (using ImageMagick) to create a snapshot of the
+  generated pdf and compares with the baseline version during each integration test run. This helped us to move fast with
+  confidence to enhance / add more reports</p>
+<% end %>
+
+<% content_for :members do %>
+  <div>Sudhakar</div>
+  <div>Prashant</div>
+  <div>Jahangir</div>
+<% end %>
+
+<% content_for :articles do %>
+  <div>
+    <ul>
+      <li><a target="_blank" href="https://medium.com/tarkalabs/automated-testing-of-generated-pdfs-3d9b7d60b188">Automated testing of generated PDFs</a></li>
+    </ul>
+  </div>
+<% end %>
+
+
