@@ -11,7 +11,7 @@ title: Welcome to Middleman,
         <h1>Talks</h1>
       </div>
 
-      <div class="row talk-index">
+      <div class="row talks-list">
       <% data.talks.talks.each do |f| %>
         <div class="talk-card">
             <iframe src="<%= f.url %>" frameborder="0" allowfullscreen></iframe>
@@ -24,3 +24,5 @@ title: Welcome to Middleman,
         </div>
   </div>
 </div>
+
+<%= partial "./partials/footer" %>

@@ -32,7 +32,7 @@ title: Welcome to Middleman,
         <% projects = sitemap.resources.select {|r| r.data['category'] && r.data['category'].downcase == 'project'} %>
         <% projects.sort_by{|p| p.data['order'] || 1000}.first(3).each do |project| %>
           <a class="project-card" href="<%=project.url%>">
-            <img src="/images/projects/modus-t.png"/>
+            <img src="/images/projects/<%=project.data['img_name']%>-t.png"/>
             <h3><%=project.data['name']%></h3>
             <p><%=project.data['short_desc']%></p>
             <div>
@@ -50,7 +50,7 @@ title: Welcome to Middleman,
   <div class="container">
     <div class="section-heading">
       <h2>Talks</h2>
-      <a class="btn btn-link">View all</a>
+      <a href="/talks" class="btn btn-link">View all</a>
     </div>
     </div>
     <div class="talks">
@@ -84,7 +84,7 @@ title: Welcome to Middleman,
     <div class="container">
       <div class="section-heading">
         <h2>Blog</h2>
-        <a class="btn btn-link">View all</a>
+        <a class="btn btn-link" href="https://medium.com/tarkalabs" target="_parent">View all</a>
       </div>
 
       <div class="row">
@@ -207,3 +207,6 @@ title: Welcome to Middleman,
 
 
 </div>
+
+
+<%= partial "./partials/footer" %>
