@@ -7,19 +7,19 @@ title: Welcome to Middleman,
 
 
 <div class="homepage">
-<div class="container">
-  <div class="hero">
-    <img src="/images/hero-image.png"/>
-    <div>
-      <h1><strong>We solve problems with science, art and code</strong></h1>
-      <h1>We <a href="">Help</a>, <a href="">Teach</a> and <a href="">Build</a> better software</h1>
-      <span class="inline">
-        <a href="/projects" class="btn btn-secondary">Browse Projects</a>
-        <a href="" class="btn btn-link">Contact us</a>
-      </span>
+  <div class="container">
+    <div class="hero">
+      <img src="/images/hero-image.png"/>
+      <div>
+        <h1><strong>We solve problems with science, art and code</strong></h1>
+        <h1>We <a href="">Help</a>, <a href="">Teach</a> and <a href="">Build</a> better software</h1>
+        <span class="inline">
+          <a href="/projects" class="btn btn-secondary">Browse Projects</a>
+          <a href="" class="btn btn-link">Contact us</a>
+        </span>
+      </div>
     </div>
-  </div>
-  </div>
+    </div>
 
   <div class="section projects">
     <div class="container">
@@ -32,12 +32,15 @@ title: Welcome to Middleman,
         <% projects = sitemap.resources.select {|r| r.data['category'] && r.data['category'].downcase == 'project'} %>
         <% projects.sort_by{|p| p.data['order'] || 1000}.first(3).each do |project| %>
           <a class="project-card" href="<%=project.url%>">
-            <img src="/images/projects/<%=project.data['img_name']%>-t.png"/>
+            <img title="<%=project.data['img_name']%>" src="/images/projects/<%=project.data['img_name']%>-t.png"/>
             <h3><%=project.data['name']%></h3>
             <p><%=project.data['short_desc']%></p>
             <div>
                 <span>Built with</span>
-                <span><%=project.data['technologies']%></span>
+          
+                <% project.data['technologies'].split(',').each do |tech| %>
+                  <span class="techIcon <%=tech.gsub(/\s/,'_')%>"></span>
+                <% end %>
             </div>
             <span class="btn btn-link">Read more</span>
         </a>

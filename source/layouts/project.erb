@@ -23,14 +23,14 @@
             <dt>Members</dt>
             <dd><%= yield_content :members %></dd>
             <dt>Technologies Used</dt>
+
             <dd>
               <% technology_links(current_page.data['technologies']).each do |name, url| %>
                 <% if url %>
-                  <a href="<%=url%>"><%=name%></a>
+                  <a href="<%=url%>"><span class="techIcon <%=name%>"></span></a>
                 <% else %>
-                  <%=name%>
+                <span class="techIcon <%=name%>"></span>
                 <% end %>
-                <span class="comma-separator">,</span>
               <% end %>
             </dd>
           </dl>

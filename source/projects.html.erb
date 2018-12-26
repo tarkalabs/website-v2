@@ -23,7 +23,9 @@ title: Welcome to Middleman
             <p><%=project.data['short_desc']%></p>
             <div>
                 <span>Built with</span>
-                <span><%=project.data['technologies']%></span>
+                <% project.data['technologies'].split(',').each do |tech| %>
+                  <span class="techIcon <%=tech.gsub(/\s/,'_')%>"></span>
+                <% end %>
             </div>
             <span class="btn btn-link">Read more</span>
         </a>

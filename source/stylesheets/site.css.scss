@@ -243,6 +243,51 @@ img {
   align-items: baseline;
 }
 
+.techIcon{
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background: url("/images/sprite.svg") no-repeat;
+
+  &.Spree, &._Spree{}
+  &.Rails, &._Rails{background-position: -63px -64px;}
+  &.Spring, &._Spring{}
+  &.Ruby, &._Ruby{}
+  &.Android, &._Android{}
+  &.Python, &._Python{}
+  &.Go, &._Go{}
+  &.HexaPDF, &._HexaPDF{}
+  &.PrawnPDF, &._PrawnPDF{}
+  &.ImageMagick, &._ImageMagick{}
+  &.Django, &._Django{}
+  &.PostgreSQL, &._PostgreSQL{}
+  &.Webpack, &._Webpack{}
+  &.Javascript, &._Javascript{background-position: -164px -64px;}
+  &.ScrollMagic, &._ScrollMagic{}
+  &.CSS3, &._CSS3{}
+  &.Firebase, &._Firebase{}
+  &.Clojure, &._Clojure{}
+  &.HTML5, &._HTML5{background-position: -114px -64px;}
+  &.CSS, &._CSS{}
+  &.Docker, &._Docker{}
+  &.Oracle, &._Oracle{}
+  &.Jenkins, &._Jenkins{}
+  &.React, &._React{background-position: -14px -64px;}
+  &.IoT, &._IoT{}
+  &.Raspberry_Pi, &._Raspberry_Pi{}
+  &.RabbitMQ, &._RabbitMQ{}
+  &.Consulting, &._Consulting{}
+  &.Swift, &._Swift{}
+  &.iOS, &._iOS{}
+  &.Realm, &._Realm{}
+  &.Fastlane, &._Fastlane{}
+  &.Sidekiq, &._Sidekiq{}
+  &.Elixir, &._Elixir{}
+  &.Phoenix_Framework, &._Phoenix_Framework{}
+  &.GoLang, &._GoLang{}
+  &.ImmutableJS, &._ImmutableJS{}
+}
+
 .homepage {
   & .hero {
     margin: 0 0 $SecSpace;
@@ -728,6 +773,10 @@ img {
 
         &:last-child{
           margin-bottom: 0;
+        }
+
+        & .techIcon{
+          filter: invert(100%);
         }
       }
     }
