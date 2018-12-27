@@ -27,9 +27,9 @@
             <dd>
               <% technology_links(current_page.data['technologies']).each do |name, url| %>
                 <% if url %>
-                  <a href="<%=url%>"><span class="techIcon <%=name%>"></span></a>
+                  <a href="<%=url%>" title="<%=name%>"><span class="techIcon <%=name%>"></span></a>
                 <% else %>
-                <span class="techIcon <%=name%>"></span>
+                <span  title="<%=name%>" class="techIcon <%=name%>"></span>
                 <% end %>
               <% end %>
             </dd>

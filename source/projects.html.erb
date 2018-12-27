@@ -21,10 +21,10 @@ title: Welcome to Middleman
             <img src="/images/projects/<%=project.data['img_name']%>-t.png"/>
             <h3><%=project.data['name']%></h3>
             <p><%=project.data['short_desc']%></p>
-            <div>
-                <span>Built with</span>
+            <div class="techused">
+                <span class="techlabel">Built with</span>
                 <% project.data['technologies'].split(',').each do |tech| %>
-                  <span class="techIcon <%=tech.gsub(/\s/,'_')%>"></span>
+                  <span title="<%=tech%>" class="techIcon <%=tech.gsub(/\s/,'_')%>"></span>
                 <% end %>
             </div>
             <span class="btn btn-link">Read more</span>

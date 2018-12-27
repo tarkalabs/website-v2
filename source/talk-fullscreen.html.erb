@@ -1,0 +1,24 @@
+---
+title: Welcome to Middleman,
+---
+
+<%= partial "./partials/header" %>
+
+
+<div class="page">
+    <div class="container">
+        <a class="back-link" href="/projects">Talks</a>
+        <% data.talks.talks.first(1).each do |f| %>
+            <div class="section-heading">
+                <h1><%= f.heading %></h1>
+                <p class="talk-by">By <%= f.presenter %></p>
+            </div>
+            <p><%= f.description %></p>
+
+    
+            <iframe class="talk-fullscreen" src="<%= f.url %>" frameborder="0" allowfullscreen></iframe>
+        <% end %>
+  </div>
+</div>
+
+<%= partial "./partials/footer" %>

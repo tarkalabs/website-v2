@@ -221,6 +221,11 @@ img {
   }
 }
 
+.talk-fullscreen{
+  width: 100%;
+  height: 769px;
+}
+
 .back-link{
   text-decoration: none;
   margin: 0 0 15px;
@@ -248,44 +253,44 @@ img {
   width: 23px;
   height: 23px;
   background: url("/images/sprite.svg") no-repeat;
+  margin: 0 5px;
+  zoom: 0.8;
 
-  &.Spree, &._Spree{}
+  &.Spree, &._Spree{background-position: -14px -414px;}
   &.Rails, &._Rails{background-position: -63px -64px;}
-  &.Spring, &._Spring{}
-  &.Ruby, &._Ruby{}
-  &.Android, &._Android{}
-  &.Python, &._Python{}
-  &.Go, &._Go{}
-  &.HexaPDF, &._HexaPDF{}
-  &.PrawnPDF, &._PrawnPDF{}
-  &.ImageMagick, &._ImageMagick{}
-  &.Django, &._Django{}
-  &.PostgreSQL, &._PostgreSQL{}
-  &.Webpack, &._Webpack{}
+  &.Spring, &._Spring{background-position: -64px -114px;}
+  &.Ruby, &._Ruby{background-position: -114px -114px;}
+  &.Android, &._Android{background-position: -164px -114px;}
+  &.Python, &._Python{background-position: -214px -114px;}
+  &.Go, &._Go, &.GoLang, &._GoLang{background-position: -14px -164px;}
+  &.HexaPDF, &._HexaPDF{background-position: -64px -164px;}
+  &.PrawnPDF, &._PrawnPDF{background-position: -114px -164px;}
+  &.ImageMagick, &._ImageMagick{background-position: -164px -164px;}
+  &.Django, &._Django{background-position: -214px -164px;}
+  &.PostgreSQL, &._PostgreSQL{background-position: -14px -214px;}
+  &.Webpack, &._Webpack{background-position: -64px -214px;}
   &.Javascript, &._Javascript{background-position: -164px -64px;}
-  &.ScrollMagic, &._ScrollMagic{}
-  &.CSS3, &._CSS3{}
-  &.Firebase, &._Firebase{}
-  &.Clojure, &._Clojure{}
+  &.ScrollMagic, &._ScrollMagic{background-position: -114px -214px;}
+  &.CSS3, &._CSS3, &.CSS, &._CSS{background-position: -16px -114px;}
+  &.Firebase, &._Firebase{background-position: -164px -214px;}
+  &.Clojure, &._Clojure{background-position: -214px -214px;}
   &.HTML5, &._HTML5{background-position: -114px -64px;}
-  &.CSS, &._CSS{}
-  &.Docker, &._Docker{}
-  &.Oracle, &._Oracle{}
-  &.Jenkins, &._Jenkins{}
+  &.Docker, &._Docker{background-position: -14px -264px;}
+  &.Oracle, &._Oracle{background-position: -64px -264px;}
+  &.Jenkins, &._Jenkins{background-position: -114px -264px;}
   &.React, &._React{background-position: -14px -64px;}
-  &.IoT, &._IoT{}
-  &.Raspberry_Pi, &._Raspberry_Pi{}
-  &.RabbitMQ, &._RabbitMQ{}
-  &.Consulting, &._Consulting{}
-  &.Swift, &._Swift{}
-  &.iOS, &._iOS{}
-  &.Realm, &._Realm{}
-  &.Fastlane, &._Fastlane{}
-  &.Sidekiq, &._Sidekiq{}
-  &.Elixir, &._Elixir{}
-  &.Phoenix_Framework, &._Phoenix_Framework{}
-  &.GoLang, &._GoLang{}
-  &.ImmutableJS, &._ImmutableJS{}
+  &.IoT, &._IoT{background-position: -164px -264px;}
+  &.Raspberry_Pi, &._Raspberry_Pi{background-position: -214px -264px;}
+  &.RabbitMQ, &._RabbitMQ{background-position: -14px -314px;}
+  &.Consulting, &._Consulting{background-position: -64px -314px;}
+  &.Swift, &._Swift{background-position: -114px -314px;}
+  &.iOS, &._iOS{background-position: -164px -314px;}
+  &.Realm, &._Realm{background-position: -214px -314px;}
+  &.Fastlane, &._Fastlane{background-position: -14px -364px;}
+  &.Sidekiq, &._Sidekiq{background-position: -64px -364px;}
+  &.Elixir, &._Elixir{background-position: -114px -364px;}
+  &.Phoenix_Framework, &._Phoenix_Framework{background-position: -164px -364px;}
+  &.ImmutableJS, &._ImmutableJS{background-position: -214px -364px;}
 }
 
 .homepage {
@@ -665,6 +670,14 @@ img {
     }
   }
 
+  & .techused{
+    & .techlabel{
+      float: left;
+      margin: 3px 10px 0 0;
+      font-size: 13px;
+    }
+  }
+
   & .btn-link {
     padding-left: 0;
     padding-right: 0;
@@ -697,6 +710,7 @@ img {
     & h1{
       font-weight: 800;
       margin: 0 0 25px;
+      max-width: 570px;
     }
     &+p{
       font-size: 16px;
@@ -777,6 +791,10 @@ img {
 
         & .techIcon{
           filter: invert(100%);
+
+          &:first-child{
+            margin-left: 0;
+          }
         }
       }
     }
@@ -786,6 +804,7 @@ img {
 footer{
   & .container{
     padding: 30px 0;
+    font-size: 13px;
 
     & > div{
       display: flex;
