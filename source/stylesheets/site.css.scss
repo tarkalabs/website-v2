@@ -504,7 +504,7 @@ img {
     margin: 0 0 10px;
   }
   & .img {
-    background: $LightColor;
+    position: relative;
     width: 370px;
     height: 245px;
     display: inline-block;
@@ -512,7 +512,10 @@ img {
   }
   & .blog-card-content {
     margin: -40px 25px 0;
-
+    z-index: 35;
+    padding: 1em;
+    background-color: $LightColor;
+    position: relative;
     & .blog-info {
       display: flex;
       flex-direction: row;
@@ -532,6 +535,7 @@ img {
         border-radius: 50%;
       }
     }
+
   }
 }
 
