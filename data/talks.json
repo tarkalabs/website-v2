@@ -3,7 +3,8 @@
             "url": "https://www.youtube.com/embed/iIhWNEuLCyc",
             "presenter": "Vagmi",
             "heading": "Kubernetes for Application Developers",
-            "description": "A quick introduction to kubernetes using minikube and kubectl. There are a lot of good visual introductions so I thought of creating a screencast to highlight some of the aspects of kubernetes."
+            "description": "A quick introduction to kubernetes using minikube and kubectl. There are a lot of good visual introductions so I thought of creating a screencast to highlight some of the aspects of kubernetes.",
+            "img": "kubernet"
         },
         {
             "url": "https://www.youtube.com/embed/HNjAgkybAdQ",
