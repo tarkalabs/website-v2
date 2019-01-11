@@ -72,7 +72,7 @@ title: Welcome to Middleman,
           <span class="talk-heading"><%= f.heading %></span>
           <span class="talk-about"><%= f.description %></span>
           <div>
-          <a href="" class="btn-link">Watch Video</a>
+          <a href="" class="btn-link">Watch in Full Screen</a>
           </div>
         </span>
         <span class="talk-by"><%= f.presenter %></span>
@@ -80,7 +80,7 @@ title: Welcome to Middleman,
       </div>
       <% end %>
 
-      <div class="talk-index" />
+      <div class="talk-index"></div>
     </div>
   </div>
 
@@ -94,19 +94,12 @@ title: Welcome to Middleman,
       <div class="row">
           <% data.posts[0...3].each do |post| %>
             <a class="blog-card" href="<%= post.link %>">
-              <div class="img">
-                <%= image_tag post.image, width: '100%' %>
-              </div>
+              <span class="img" style="background-image: url('<%= post.image %>')"></span>
               <div class="blog-card-content">
-              <h3><%= post.title %></h3>
+              <h3><span><%= post.title %></span></h3>
               <div class="blog-info">
-                <div>
                   <span>By <strong><%= post.author %></strong> on <%= Time.parse(post.published_at).strftime('%Y-%m-%d') %></span>
                   <span><i>Read time ~ 5 mins</i></span>
-                </div>
-                <div>
-                    <span class="img-holder" />              
-                  </div>
                 </div>
               </div>
             </a>
