@@ -1,0 +1,35 @@
+<div class="tarkan">
+    <a class="nav-handle" name="<%= shortName %>"></a>
+    <img src="/images/team/<%=image%>"/>
+    <div class="t-name">
+        <h3>
+            <%= name %>
+        </h3>
+        <h5><%= designation %></h5>
+    </div>
+    
+    <div class="desc">
+        <%= description %>
+        <div class="refs">
+          <% unless githubUrl.empty? %>
+            <a href="<%=githubUrl%>" target="_blank"><span class="fa fa-github"></span></a>
+          <% end %>
+            
+          <% unless stackoverflowUrl.empty? %>
+            <a href="<%=stackoverflowUrl%>" target="_blank"><span class="fa fa-stack-overflow"></span></a>
+          <% end %>
+            
+          <% unless dribbbleUrl.empty? %>
+            <a href="<%=dribbbleUrl%>" target="_blank"><span class="fa fa-dribbble"></span></a>
+          <% end %>
+            
+          <% unless blogUrl.empty? %>
+            <a href="<%=blogUrl%>" target="_blank"><span class="fa fa-rss"></span></a>
+          <% end %>
+            
+          <% unless twitterUrl.empty? %>
+            <a href="<%=twitterUrl%>" target="_blank"><span class="fa fa-twitter"></span></a>
+          <% end %>
+        </div>
+    </div>
+</div>

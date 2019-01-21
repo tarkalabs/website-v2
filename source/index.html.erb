@@ -3,8 +3,8 @@ title: TarkaLabs - Software Development, Consulting and Training
 # <%= partial(:"./partials/header", :locals => {:title => "Custom Heading"}) %>
 ---
 
+<%= partial "./partials/jquery" %>
 <%= partial "./partials/header" %>
-
 
 <div class="homepage">
   <div class="container">
@@ -65,7 +65,7 @@ title: TarkaLabs - Software Development, Consulting and Training
             <span class="talk-next"></span>
           </div>
           <img src="/images/talks/<%= f.img %>.jpg"/>
-          <iframe src="<%= f.url %>" frameborder="0"></iframe>
+          <iframe id="ytplayer" type="text/html" src="<%= f.url %>" frameborder="0"></iframe>
         </span>
         <div>
         <span class="talk-title">
@@ -136,7 +136,7 @@ title: TarkaLabs - Software Development, Consulting and Training
   </div>
 
   <div class="section">
-    <div class="container contact-us">
+    <div class="container contact-us" id="contact-us">
       <div class="section-heading">
         <h2>Contact us</h2>
       </div>
@@ -151,7 +151,7 @@ title: TarkaLabs - Software Development, Consulting and Training
               +91 44 4303 6522
             </address>
 
-            <a class="btn btn-link">Open is map</a>
+            <a href="https://goo.gl/maps/JzQU5f5vnk62" target="_blank" class="btn btn-link">Open is map</a>
           </div>
 
           <div class="address">
@@ -162,7 +162,7 @@ title: TarkaLabs - Software Development, Consulting and Training
               Bangalore, KA, India, 560038.
             </address>
 
-            <a class="btn btn-link">Open is map</a>
+            <a href="https://goo.gl/maps/THnTwcXgS9m" target="_blank" class="btn btn-link">Open is map</a>
           </div>
 
           <div class="address">
@@ -174,7 +174,7 @@ title: TarkaLabs - Software Development, Consulting and Training
               +1 (971) 270 – 6909
             </address>
 
-            <a class="btn btn-link">Open is map</a>
+            <a target="_blank" class="btn btn-link">Open is map</a>
           </div>
 
           <div class="address">
@@ -185,7 +185,7 @@ title: TarkaLabs - Software Development, Consulting and Training
               Fredericton, NB, E3C 0J1<br/>
             </address>
 
-            <a class="btn btn-link">Open is map</a>
+            <a target="_blank" class="btn btn-link">Open is map</a>
           </div>
       </div>
 
@@ -215,3 +215,31 @@ title: TarkaLabs - Software Development, Consulting and Training
 </div>
 
 <%= partial "./partials/footer" %>
+
+
+<script>
+$(document).ready(function(){
+  $('.talk-index .talk-preview img').click(function(){
+      $('.talk-index').removeClass('active');
+      $(this).parents('.talk-index').toggleClass('active');
+
+      /*var elePos = $(this).parents('.talk-index').offset().left;
+      var scrollPos = $(this).parents('.talks').scrollLeft();
+      console.log("scrollPos", elePos, scrollPos);
+
+      if(elePos != 255){
+        $('.talks').animate( { scrollLeft: '+=900' }, 300);
+      }*/
+
+  });
+  $('.talk-index .talk-preview .toggle-btns .talk-next').click(function(){
+        console.log("next clicked");
+        $(this).parents('.talks').animate( { scrollLeft: '+=900' }, 300);
+  });
+  $('.talk-index .talk-preview .toggle-btns .talk-prev').click(function(){
+        console.log("Prev clicked");
+        $(this).parents('.talks').animate( { scrollLeft: '-=900' }, 300);
+  });
+})
+
+</script>

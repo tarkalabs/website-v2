@@ -2,6 +2,7 @@
 title: Welcome to Middleman,
 ---
 
+<%= partial "./partials/jquery" %>
 <%= partial "./partials/header" %>
 
 <div class="page">
@@ -9,9 +10,9 @@ title: Welcome to Middleman,
 
       <div class="sub-menu">
         <span class="label">ABOUT</span>
-        <ul>
-          <li><a href="#" class="active">Company</a></li>
-          <li><a href="#">Team</a></li>
+        <ul>            
+            <li><a href="/about" class="active">Company</a></li>
+            <li><a href="/team">Team</a></li>
         </ul>
       </div>
 
@@ -41,9 +42,70 @@ title: Welcome to Middleman,
         <div class="section-heading">
           <h1>What we<br/> do?</h1>
         </div>
+          
+      <div>
+          <ul class="tabs">
+            <li><a href="#product_engg" class="product_engg"></a></li>
+            <li><a href="#consulting" class="consulting"></a></li>
+            <li><a href="#coaching" class="coaching"></a></li>
+          </ul>
+          
+          <div class="tab_container">
+              <div id="product_engg" class="tab_content">
+                <h3>Product Engineering</h3>
+                <p>We practice agile in the spirit of the Agile Manifesto. We consider the following practices essential for delivering software as a team.</p>
+
+                <ul>
+                    <li>Automated tests with Test Pyramid strategy</li>
+                    <li>Deployment pipeline</li>
+                    <li>Processes that help distributed teams</li>
+                    <li>Key rituals such as standups and retros.</li>
+                    <li>Tools for remote pair programming.</li>
+                </ul>
+
+                <p>Please visit our Projects section to know more about our engagements.</p>
+              </div>
+
+              <div id="consulting" class="tab_content">
+                <h3>Consulting</h3>
+                <p>If you already have a team and are looking for accelerating the development and delivery. We will help you study and improve on existing processes, analyze and suggest better technological approaches based on the requirements and the complexity of the current codebase. Please read our article on Brownfield Development to know more.</p>
+              </div>
+
+              <div id="coaching" class="tab_content">
+                <h3>Coaching</h3>
+                <p>We like talking about software and our experiences with it.</p>
+                <ul>
+                    <li>We conduct Reboot that focus on the craft of software development</li>
+                    <li>We also conduct technology specific workshops on React, Ruby, Elixir and Javascript as a structured course</li>
+                </ul>
+                <p>Our courses would accelerate your team's understanding and boost their learning curve.</p>
+              </div>
+          </div>
+      </div>
+          
+          
       </div>
       
   </div>
 </div>
 
 <%= partial "./partials/footer" %>
+
+<script>
+$(document).ready(function(){
+    $('.tab_content:first').addClass('active');
+    $('.tabs li:first').addClass('active');
+    
+    $('.tabs li').click(function(event) {
+        event.preventDefault();
+        $('.tabs li').removeClass('active');
+        $(this).addClass('active');
+        $('.tab_content').removeClass('active');
+
+        var selectTab = $(this).find('a').attr("href");
+
+        $(selectTab).addClass('active');
+    });
+});
+
+</script>
