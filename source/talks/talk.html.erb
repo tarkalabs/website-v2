@@ -1,0 +1,19 @@
+<%= partial "../partials/header" %>
+
+
+<div class="page">
+    <div class="container">
+        <a class="back-link" href="/talks">Talks</a>
+            <div class="section-heading">
+                <h1><%= talk.heading %></h1>
+                <p class="talk-by">By <%= talk.presenter %> </p>
+            </div>
+            <p><%= talk.description %></p>
+    
+            <iframe class="talk-fullscreen" src="<%= talk.url %>" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+
+
+<%= partial "../partials/footer" %>

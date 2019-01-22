@@ -13,7 +13,13 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 page '/projects/*', layout: 'project'
+#page '/talks/*', layout: 'talk'
 page '/technologies/*', layout: 'technology'
+
+data.talks.talks.each do | talk |
+    proxy "/talks/#{talk.url_slug}/index.html", "/talks/talk.html", :locals => {:talk => talk}, :ignore => true
+end
+    
 
 activate :directory_indexes
 activate :livereload

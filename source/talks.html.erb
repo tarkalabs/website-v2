@@ -19,7 +19,7 @@ title: Welcome to Middleman,
           <h3><%= f.heading %></h3>
           <p><%= f.description %></p>
           <p class="talk-by"><%= f.presenter %></p>
-          <span class="btn btn-link">Watch Video</span>
+          <a href="/talks/<%= f.url_slug %>" class="btn btn-link">Watch Video</a>
         </div>
         <% end %>
         </div>
