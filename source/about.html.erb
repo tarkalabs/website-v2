@@ -39,7 +39,7 @@ title: Welcome to Middleman,
           </div>
         </div>
 
-        <div class="section-heading">
+        <div class="section-heading" id="whatwedo">
           <h1>What we<br/> do?</h1>
         </div>
           
@@ -97,7 +97,7 @@ $(document).ready(function(){
     $('.tabs li:first').addClass('active');
     
     $('.tabs li').click(function(event) {
-        event.preventDefault();
+//        event.preventDefault();
         $('.tabs li').removeClass('active');
         $(this).addClass('active');
         $('.tab_content').removeClass('active');

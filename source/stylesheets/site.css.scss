@@ -1165,8 +1165,28 @@ footer{
 
     & > div{
       display: flex;
-      justify-content: space-between;
-      align-items: baseline;
+        
+        & > span{
+            width: 33.333%;
+            
+            &:last-child{
+                font-size: 16px;
+                text-align: right;
+                
+                & > a{
+                    min-width: 40px;
+                    text-align: center;
+                    display: inline-block;
+                }
+            }
+            &:first-child{
+                
+            }
+            
+            &.logo-type{
+                text-align: center;
+            }
+        }
     }
   }
 }
