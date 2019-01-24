@@ -1,4 +1,4 @@
-<header>
+<header class="mobile-hide">
     <div class="container">
         <a href="/" class="brand"><img src="/images/logo.svg" height="50" /></a>
         <div>
@@ -10,3 +10,42 @@
         </div>
     </div>
 </header>
+
+<header class="desktop-hide">
+    <span class="hamburger"></span>
+    <img src="/images/logo_type.svg"  class="brand"/>
+    
+    <div class="menu">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+        <a href="/talks">Talks</a>
+        <a href="https://medium.com/tarkalabs" target="_parent">Blog</a>
+        <a href="/#contact-us">Contact Us</a>
+    </div>
+</header>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script>
+$(document).ready(function(){
+  $('.desktop-hide .hamburger').click(function(){
+      $(this).parents('.desktop-hide').toggleClass('expand');
+      $('body').toggleClass('menu-active');
+  });
+    
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 50) {
+            $(".desktop-hide").addClass("active");
+        } else {
+            $(".desktop-hide").removeClass("active");
+        }
+    });
+})
+
+</script>

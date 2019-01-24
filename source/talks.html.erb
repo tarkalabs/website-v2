@@ -15,11 +15,12 @@ title: Welcome to Middleman,
       <div class="row talks-list">
       <% data.talks.talks.each do |f| %>
         <div class="talk-card">
-          <img src="/images/talks/<%= f.img %>.jpg"/>
+            <iframe class="desktop-hide" src="<%= f.url %>" frameborder="0" allowfullscreen></iframe>
+          <img class="mobile-hide" src="/images/talks/<%= f.img %>.jpg"/>
           <h3><%= f.heading %></h3>
           <p><%= f.description %></p>
           <p class="talk-by"><%= f.presenter %></p>
-          <a href="/talks/<%= f.url_slug %>" class="btn btn-link">Watch Video</a>
+          <a href="/talks/<%= f.url_slug %>" class="btn btn-link mobile-hide">Watch Video</a>
         </div>
         <% end %>
         </div>
