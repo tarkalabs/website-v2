@@ -36,7 +36,7 @@
             "url": "https://www.youtube.com/embed/cdJXW2Q_CJo",
             "presenter": "Vagmi",
             "heading": "Building GraphQL Servers in Go",
-            "description": "",
+            "description": "A quick introduction to GraphQL and how we can build GraphQL servers in Golang. This talk also touches upon the challenges that you could face while scaling a GraphQL server and how to mitigate it.",
             "img":"building-graphql-servers-in-go"
         },
         {
@@ -52,7 +52,7 @@
             "url": "https://www.slideshare.net/slideshow/embed_code/key/3n2wUUKX2yV3EJ",
             "presenter": "Dhruva",
             "heading": "WebRTC Landscape",
-            "description": "",
+            "description": "Dhruva takes us on a whirlwind tour of what WebRTC is and how to build your own signalling server.",
             "img":"WebRTC-Landscape"
         },
         {
@@ -60,7 +60,7 @@
             "url": "https://www.youtube.com/embed/c-1miN1WZgo",
             "presenter": "Gaurav",
             "heading": "React Apps with a Brain",
-            "description": "",
+            "description": "We talk about how React apps can be architected with a functional pattern and some of the challenges in using such a pattern and how they can be addressed.",
             "img":"React-Apps-with-a-Brain"
         },
         {
@@ -68,7 +68,7 @@
             "url": "https://www.youtube.com/embed/GvQT5wiOKR0",
             "presenter": "Vagmi",
             "heading": "UI as a pure function of state - JSChannel 2016",
-            "description": "",
+            "description": "We talk about React and how to use it with Immutable and immstruct. This is an alternative to redux and provides a much simpler mechanism to write performant Single Page Applications with React",
             "img":"UI-as-a-pure-function-of-state-JSChannel-2016"
         },
         {
@@ -76,7 +76,7 @@
             "url": "https://www.youtube.com/embed/zm36gpxwKPk?list=PLVbkwm50L3Yxy2LcthD8ln3JfvWVdF7Am",
             "presenter": "Vagmi",
             "heading": "Statically Typed Ruby - Crystal - RubyConfIndia 2016",
-            "description": "",
+            "description": "Ruby is an awesome language but lacks in performance. Crystal is a ruby inspired, statically compiled language that uses the LLVM compiler and runs blazingly fast.",
             "img":"Statically-Typed-Ruby-Crystal-RubyConfIndia-2016"
         },
         {
@@ -84,7 +84,7 @@
             "url": "https://www.youtube.com/embed/fb44xcwHx0U?list=PLVbkwm50L3Yxy2LcthD8ln3JfvWVdF7Am",
             "presenter": "Vagmi",
             "heading": "FP on your browser - PureScript",
-            "description": "",
+            "description": "PureScript is a haskell like language that compiles down to Javascript. It has a very unique monadic effect system to address side effects. PureScript can be used both in the browser and on the backend with Node.js",
             "img":"FP-on-your-browser-PureScript"
         },
         {
@@ -92,7 +92,7 @@
             "url": "https://www.youtube.com/embed/LOJS4weW5u4?list=PLVbkwm50L3Yxy2LcthD8ln3JfvWVdF7Am",
             "presenter": "Vagmi",
             "heading": "Functional Reactive Programming with Elm",
-            "description": "",
+            "description": "Elm is a functional reactive programming language. Elm's take on signals and mailboxes provides a very nice way to deal with side effects. Elm has laid most of the foundational ideas for frameworks like Redux",
             "img":"Functional-Reactive-Programming-with-Elm"
         },
         {
@@ -100,7 +100,7 @@
             "url": "https://www.youtube.com/embed/NBgYLPA0qO4",
             "presenter": "Vagmi",
             "heading": "ClojureScript and Om - Functional Programming in the browser",
-            "description": "",
+            "description": "Clojure is a modern lisp. In this talk we look at a functional way to deal with application state and to treat UI as a pure function of the state.",
             "img":"ClojureScript-and-Om-Functional-Programming-in-the-browser"
         }
     ]
