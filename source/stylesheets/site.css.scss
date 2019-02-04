@@ -1187,9 +1187,13 @@ footer{
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 641px) {
     .desktop-hide{
         display: none !important;
+    }
+    
+    .container{
+        min-width: 960px;
     }
     
     .tarkans .tarkan{
@@ -1205,7 +1209,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
     body{
         &.menu-active{
             overflow: hidden;
@@ -1237,6 +1241,7 @@ footer{
         &.expand{
             height: 100%;
             background: $LighterColor;
+            overflow: auto;
             
             & .brand{
                 display: none;
@@ -1532,7 +1537,31 @@ footer{
 }
 
 
-
+@media screen and (min-width: 340px) and (max-width: 640px) {
+    header.expand{
+        align-items: flex-start;
+        
+        & .hamburger{
+            position: fixed;
+        }
+    }
+    .homepage .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card, .talk-card, .blog-card{
+        max-width: none;
+    }
+    .talks-list{
+        margin: 0 -15px;
+        
+        & .talk-card{
+            margin: 0 15px 30px;
+            max-width: calc(50% - 35px);
+        }
+    }
+}
 
 
 
