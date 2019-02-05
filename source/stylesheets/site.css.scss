@@ -1537,7 +1537,7 @@ footer{
 }
 
 
-@media screen and (min-width: 340px) and (orientation : landscape) {
+@media screen and (max-width: 640px) and (orientation : landscape) {
     header.expand{
         align-items: flex-start;
         
