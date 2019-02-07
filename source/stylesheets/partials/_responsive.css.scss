@@ -426,7 +426,6 @@
     }
     .project-card, .talk-card, .blog-card{
         max-width: 298px;
-        min-width: 285px;
     }
     .horizontal-card-mobile{
         display: flex;
@@ -435,6 +434,8 @@
         position: relative;
         
         & .project-card, & .talk-card, & .blog-card{
+            min-width: 285px;
+            
             &:first-child{
                 margin-left: 30px;
             }
