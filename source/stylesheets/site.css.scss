@@ -1057,14 +1057,14 @@ img {
     }
     & .tarkans{
         margin: 0 -15px;
-        width: 100%;
+//        width: 100%;
         display: flex;
         flex-wrap: wrap;
         
         & .tarkan{
             margin: 0 15px 35px;
             width: calc(33.333% - 30px);
-            min-width: 290px;
+//            min-width: 290px;
             position: relative;
             z-index: 1;
             

@@ -408,8 +408,14 @@ title: About Team
 
 <script>
 $(document).ready(function(){
-    $('.tarkan').click(function(event) {
-        $(this).toggleClass('active');
+    
+    $(".tarkan img").on("click", function(){
+        $('.tarkan').removeClass('active');
+        $(this).parent('.tarkan').addClass('active');
+    });
+    
+    $(".tarkan .close").on("click", function(){
+        $(this).parent('.tarkan').removeClass('active');
     });
 });
 
