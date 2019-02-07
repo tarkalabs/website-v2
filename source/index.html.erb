@@ -6,13 +6,13 @@ title: TarkaLabs - Software Development, Consulting and Training
 <%= partial "./partials/header" %>
 
 <div class="homepage">
-  <div class="container">
+  <div class="container hero-container">
     <div class="hero">
       <img src="/images/hero-image.png"/>
       <div>
         <h1><strong>We solve problems with science, art and code</strong></h1>
         <h1>We <a href="/about#whatwedo">Help</a>, <a href="/about#whatwedo">Teach</a> and <a href="about#whatwedo">Build</a> better software</h1>
-        <span class="inline">
+        <span class="inline mobile-hide">
           <a href="/projects" class="btn btn-secondary">Browse Projects</a>
           <a href="#contact-us" class="btn btn-link mobile-hide">Contact us</a>
           <a href="/contact-us" class="btn btn-link desktop-hide">Contact us</a>
@@ -21,14 +21,14 @@ title: TarkaLabs - Software Development, Consulting and Training
     </div>
     </div>
 
-  <div class="section projects mobile-hide">
+  <div class="section projects">
     <div class="container">
       <div class="section-heading">
         <h2>Projects</h2>
         <a href="/projects" class="btn btn-link">View all</a>
       </div>
 
-      <div class="row">
+      <div class="row horizontal-card-mobile">
         <% projects = sitemap.resources.select {|r| r.data['category'] && r.data['category'].downcase == 'project'} %>
         <% projects.sort_by{|p| p.data['order'] || 1000}.first(3).each do |project| %>
           <a class="project-card" href="<%=project.url%>">
@@ -49,14 +49,25 @@ title: TarkaLabs - Software Development, Consulting and Training
     </div>
   </div>
 
-  <div class="section mobile-hide">
-  <div class="container">
-    <div class="section-heading">
-      <h2>Talks</h2>
-      <a href="/talks" class="btn btn-link">View all</a>
+  <div class="section">
+    <div class="container">
+        <div class="section-heading">
+          <h2>Talks</h2>
+          <a href="/talks" class="btn btn-link">View all</a>
+        </div>
+        <div class="row desktop-hide horizontal-card-mobile">
+          <% data.talks.talks.each do |f| %>
+            <div class="talk-card">
+              <img src="/images/talks/<%= f.img %>.jpg"/>
+              <h3><%= f.heading %></h3>
+              <p><%= f.description %></p>
+              <p class="talk-by"><%= f.presenter %></p>
+              <a href="/talks/<%= f.url_slug %>" class="btn btn-link mobile-hide">Watch Video</a>
+            </div>
+            <% end %>
+        </div>
     </div>
-    </div>
-    <div class="talks">
+    <div class="talks mobile-hide">
       <% data.talks.talks.each do |f| %>
       <div class="talk-index">
         <span class="talk-preview">
@@ -84,14 +95,14 @@ title: TarkaLabs - Software Development, Consulting and Training
     </div>
   </div>
 
-  <div class="section blog mobile-hide">
+  <div class="section blog">
     <div class="container">
       <div class="section-heading">
         <h2>Blog</h2>
         <a class="btn btn-link" href="https://medium.com/tarkalabs" target="_parent">View all</a>
       </div>
 
-      <div class="row">
+      <div class="row horizontal-card-mobile">
           <% data.posts[0...3].each do |post| %>
             <a class="blog-card" href="<%= post.link %>">
               <span class="img" style="background-image: url('<%= post.image %>')"></span>
@@ -137,7 +148,7 @@ title: TarkaLabs - Software Development, Consulting and Training
   </div>
 -->
 
-  <div class="section mobile-hide">
+  <div class="section">
     <div class="container contact-us" id="contact-us">
       <div class="section-heading">
         <h2>Contact us</h2>
