@@ -346,9 +346,49 @@
             }
         }
     }
+    
+    .error-page{
+        & .container{            
+            & > div{
+                &:first-child{
+                    padding-left: 0;
+                    
+                    & .heading{
+                        font-size: 48px;
+                        line-height: 52px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 768px) and (orientation : landscape){
+    .error-page{
+        & .container{
+            flex-direction: row;
+            
+            & > div{
+                flex: 1;
+                
+                &:last-child{
+                    margin-top: 0;
+                }
+                
+                &:first-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) and (orientation : landscape){
+    
+}
+
+@media screen and (max-width: 414px){
     .homepage{
         & .section{
             &.blog{
@@ -382,6 +422,33 @@
             min-width: auto;
             width: 100%;
             margin: 0 0 30px;
+        }
+    }
+    
+    .error-page{
+        & .container{
+            flex-direction: column-reverse;
+            
+            & > div{
+                flex: none;
+                
+                &:last-child{
+                    margin-top: 50px;
+                }
+                
+                &:first-child{
+                    margin-bottom: 50px;
+
+                    & .heading{
+                        font-size: 48px;
+                        line-height: 52px;
+                        margin-bottom: 20px;
+                    }
+                    & p{
+                        margin-bottom: 20px;
+                    }
+                }
+            }
         }
     }
 }
@@ -526,7 +593,7 @@
     }
 }
 
-@media screen and (min-width: 360px) and (max-width: 767px) and (orientation : portrait){
+@media screen and (min-width: 414px) and (max-width: 767px) and (orientation : portrait){
     .homepage{
         & .container.hero-container{
             padding: 0;
