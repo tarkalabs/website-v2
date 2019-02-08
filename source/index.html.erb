@@ -24,14 +24,14 @@ title: TarkaLabs - Software Development, Consulting and Training
     <div class="container">
       <div class="section-heading">
         <h2>Projects</h2>
-        <a href="/projects" class="btn btn-link">View all</a>
+        <a href="/works" class="btn btn-link">View all</a>
       </div>
 
       <div class="row horizontal-card-mobile">
         <% projects = sitemap.resources.select {|r| r.data['category'] && r.data['category'].downcase == 'project'} %>
         <% projects.sort_by{|p| p.data['order'] || 1000}.first(3).each do |project| %>
           <a class="project-card" href="<%=project.url%>">
-            <img title="<%=project.data['img_name']%>" src="/images/projects/<%=project.data['img_name']%>-t.png"/>
+            <img title="<%=project.data['img_name']%>" src="/images/works/<%=project.data['img_name']%>-t.png"/>
             <h3><%=project.data['name']%></h3>
             <p><%=project.data['short_desc']%></p>
             <div class="techused">
