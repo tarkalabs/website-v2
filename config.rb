@@ -12,7 +12,7 @@ end
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
-page '/projects/*', layout: 'project'
+page '/works/*', layout: 'work'
 #page '/talks/*', layout: 'talk'
 page '/technologies/*', layout: 'technology'
 
@@ -70,10 +70,10 @@ helpers do
 
   def project_links(tech_page)
     tech_name = tech_page.data['name'].downcase
-    projects = app.sitemap.resources.select do |r|
-      r.data['category'] && r.data['category'].downcase == 'project' &&
+    works = app.sitemap.resources.select do |r|
+      r.data['category'] && r.data['category'].downcase == 'work' &&
           r.data['technologies'] && r.data['technologies'].downcase.include?(tech_name)
     end
-    projects.inject({}) {|map, project| map[project.data['name']] = "/#{project.path}"; map}
+    projects.inject({}) {|map, work| map[work.data['name']] = "/#{work.path}"; map}
   end
 end
