@@ -1,107 +1,112 @@
 {
-    "talks": [{
-            "url_slug":"Kubernetes-for-Application-Developers",
+    "talks": [
+        {
+            "url_slug": "Kubernetes-for-Application-Developers",
             "url": "https://www.youtube.com/embed/iIhWNEuLCyc",
+            "videoId": "iIhWNEuLCyc",
             "presenter": "Vagmi",
             "heading": "Kubernetes for Application Developers",
             "description": "A quick introduction to kubernetes using minikube and kubectl. There are a lot of good visual introductions so I thought of creating a screencast to highlight some of the aspects of kubernetes.",
             "img": "Kubernetes-for-Application-Developers"
         },
         {
-            "url_slug":"concurrency-vs-parallelism",
+            "url_slug": "concurrency-vs-parallelism",
             "url": "https://www.youtube.com/embed/HNjAgkybAdQ",
+            "videoId": "HNjAgkybAdQ",
             "presenter": "Naren",
             "heading": "Concurrency Vs Parallelism",
             "description": "A good code should use resources efficiently, which means not over utilise them as well as not leaving them idle. Main feature of Python3 is its async capabilities. After learning what concurrency is and why concurrency is not parallelism.",
             "img": "concurrency-vs-parallelism"
         },
         {
-            "url_slug":"thinking-in-go",
+            "url_slug": "thinking-in-go",
             "url": "https://www.youtube.com/embed/6ce54mscaKo",
+            "videoId": "6ce54mscaKo",
             "presenter": "Vagmi",
             "heading": "Thinking in Go",
             "description": "n the course of working with Go, there are certain things you only learn along the way. This talk will walk you through such tips & tricks and help you in becoming a better Go developer.",
-            "img":"thinking-in-go"
+            "img": "thinking-in-go"
         },
         {
-            "url_slug":"concurrency-comparison-go-vs-erlang",
+            "url_slug": "concurrency-comparison-go-vs-erlang",
             "url": "https://www.youtube.com/embed/-kOJGY0M9kM",
+            "videoId": "-kOJGY0M9kM",
             "presenter": "Sudhakar",
             "heading": "Concurrency Comparison: Go Vs Erlang",
             "description": "Both Golang Goroutines and Erlang processes are based on Communicating Sequential Processes with subtle differences in the way they are implemented.",
-            "img":"concurrency-comparison-go-vs-erlang"
+            "img": "concurrency-comparison-go-vs-erlang"
         },
         {
-            "url_slug":"building-graphql-servers-in-go",
+            "url_slug": "building-graphql-servers-in-go",
             "url": "https://www.youtube.com/embed/cdJXW2Q_CJo",
+            "videoId": "cdJXW2Q_CJo",
             "presenter": "Vagmi",
             "heading": "Building GraphQL Servers in Go",
             "description": "A quick introduction to GraphQL and how we can build GraphQL servers in Golang. This talk also touches upon the challenges that you could face while scaling a GraphQL server and how to mitigate it.",
-            "img":"building-graphql-servers-in-go"
+            "img": "building-graphql-servers-in-go"
         },
         {
-            "url_slug":"Better-Ruby-on-Rails-Phoenix-Framework",
+            "url_slug": "Better-Ruby-on-Rails-Phoenix-Framework",
             "url": "https://www.youtube.com/embed/wW3LtFoybvM",
+            "videoId": "wW3LtFoybvM",
             "presenter": "Sudhakar",
             "heading": "Better Ruby on Rails - Phoenix Framework",
             "description": "An introductory talk about Phoenix Framework that also compares it with the popular Ruby on Rails that helps the RoR developers to start learning Phoenix Framework",
-            "img":"Better-Ruby-on-Rails-Phoenix-Framework"
+            "img": "Better-Ruby-on-Rails-Phoenix-Framework"
         },
         {
-            "url_slug":"WebRTC-Landscape",
-            "url": "https://www.slideshare.net/slideshow/embed_code/key/3n2wUUKX2yV3EJ",
-            "presenter": "Dhruva",
-            "heading": "WebRTC Landscape",
-            "description": "Dhruva takes us on a whirlwind tour of what WebRTC is and how to build your own signalling server.",
-            "img":"WebRTC-Landscape"
-        },
-        {
-            "url_slug":"React-Apps-with-a-Brain",
+            "url_slug": "React-Apps-with-a-Brain",
             "url": "https://www.youtube.com/embed/c-1miN1WZgo",
+            "videoId": "c-1miN1WZgo",
             "presenter": "Gaurav",
             "heading": "React Apps with a Brain",
             "description": "We talk about how React apps can be architected with a functional pattern and some of the challenges in using such a pattern and how they can be addressed.",
-            "img":"React-Apps-with-a-Brain"
+            "img": "React-Apps-with-a-Brain"
         },
         {
-            "url_slug":"UI-as-a-pure-function-of-state-JSChannel-2016",
+            "url_slug": "UI-as-a-pure-function-of-state-JSChannel-2016",
             "url": "https://www.youtube.com/embed/GvQT5wiOKR0",
+            "videoId": "GvQT5wiOKR0",
             "presenter": "Vagmi",
             "heading": "UI as a pure function of state - JSChannel 2016",
             "description": "We talk about React and how to use it with Immutable and immstruct. This is an alternative to redux and provides a much simpler mechanism to write performant Single Page Applications with React",
-            "img":"UI-as-a-pure-function-of-state-JSChannel-2016"
+            "img": "UI-as-a-pure-function-of-state-JSChannel-2016"
         },
         {
-            "url_slug":"Statically-Typed-Ruby-Crystal-RubyConfIndia-2016",
+            "url_slug": "Statically-Typed-Ruby-Crystal-RubyConfIndia-2016",
             "url": "https://www.youtube.com/embed/zm36gpxwKPk?list=PLVbkwm50L3Yxy2LcthD8ln3JfvWVdF7Am",
+            "videoId": "zm36gpxwKPk",
             "presenter": "Vagmi",
             "heading": "Statically Typed Ruby - Crystal - RubyConfIndia 2016",
             "description": "Ruby is an awesome language but lacks in performance. Crystal is a ruby inspired, statically compiled language that uses the LLVM compiler and runs blazingly fast.",
-            "img":"Statically-Typed-Ruby-Crystal-RubyConfIndia-2016"
+            "img": "Statically-Typed-Ruby-Crystal-RubyConfIndia-2016"
         },
         {
-            "url_slug":"FP-on-your-browser-PureScript",
+            "url_slug": "FP-on-your-browser-PureScript",
             "url": "https://www.youtube.com/embed/fb44xcwHx0U?list=PLVbkwm50L3Yxy2LcthD8ln3JfvWVdF7Am",
+            "videoId": "fb44xcwHx0U",
             "presenter": "Vagmi",
             "heading": "FP on your browser - PureScript",
             "description": "PureScript is a haskell like language that compiles down to Javascript. It has a very unique monadic effect system to address side effects. PureScript can be used both in the browser and on the backend with Node.js",
-            "img":"FP-on-your-browser-PureScript"
+            "img": "FP-on-your-browser-PureScript"
         },
         {
-            "url_slug":"Functional-Reactive-Programming-with-Elm",
+            "url_slug": "Functional-Reactive-Programming-with-Elm",
             "url": "https://www.youtube.com/embed/LOJS4weW5u4?list=PLVbkwm50L3Yxy2LcthD8ln3JfvWVdF7Am",
+            "videoId": "LOJS4weW5u4",
             "presenter": "Vagmi",
             "heading": "Functional Reactive Programming with Elm",
             "description": "Elm is a functional reactive programming language. Elm's take on signals and mailboxes provides a very nice way to deal with side effects. Elm has laid most of the foundational ideas for frameworks like Redux",
-            "img":"Functional-Reactive-Programming-with-Elm"
+            "img": "Functional-Reactive-Programming-with-Elm"
         },
         {
-            "url_slug":"ClojureScript-and-Om-Functional-Programming-in-the-browser",
+            "url_slug": "ClojureScript-and-Om-Functional-Programming-in-the-browser",
             "url": "https://www.youtube.com/embed/NBgYLPA0qO4",
+            "videoId": "NBgYLPA0qO4",
             "presenter": "Vagmi",
             "heading": "ClojureScript and Om - Functional Programming in the browser",
             "description": "Clojure is a modern lisp. In this talk we look at a functional way to deal with application state and to treat UI as a pure function of the state.",
-            "img":"ClojureScript-and-Om-Functional-Programming-in-the-browser"
+            "img": "ClojureScript-and-Om-Functional-Programming-in-the-browser"
         }
     ]
 }
