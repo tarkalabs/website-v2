@@ -662,6 +662,10 @@ img {
     width: 50%;
     display: inline-block;
     float: left;
+      
+    & .email-holder{
+        margin: 0 0 $SecSpace;
+    }
 
     & .address {
       display: inline-block;
