@@ -597,8 +597,20 @@ img {
       display: inline-block;
       width: 570px;
       height: 375px;
-      background: $LightColor;
+      background: #fff;
+      border: 1px solid $LightColor;
       float: left;
+      position: relative;
+        
+        & img{
+            max-width: 250px;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
     }
     & .count {
       transform: rotate(90deg);
@@ -632,6 +644,34 @@ img {
         right: 30px;
         opacity: 0.25;
       }
+        
+        & .photo{
+            width: 55px;
+            display: inline-block;
+            position: absolute;
+            border-radius: 50%;
+            overflow: hidden;
+            left: -27px;
+            top: 25px;
+            height: 55px;
+            
+            & img{
+                max-width: none;
+                max-height: 100%;
+            }
+            
+            &.caratlane{
+
+            }
+            &.gd{
+
+            }
+        }
+        
+        & .name, & .position{
+            padding-left: 15px;
+            line-height: 24px;
+        }
 
       & .name {
         color: $LighterColor;
@@ -639,12 +679,10 @@ img {
         font-weight: bold;
         display: inline-block;
         width: 100%;
-        line-height: 24px;
       }
       & .position {
         font-size: 16px;
         color: $BlackColor;
-        line-height: 24px;
       }
       & .quote {
         font-family: skolar-latin, serif;
