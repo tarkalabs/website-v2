@@ -8,14 +8,74 @@ img_name: pdf
 ---
 
 <% content_for :about do %>
-  <p>Genetic Direction came to us with a requirement to generate 40-50 page PDF reports with lots graphics and dynamic content 
-  based on the given user profile data. And they wanted the solution in ruby as they are a ruby shop.</p>
-  <p>We did the initial analysis to find the feasibility of their requirements and were pleasantly surprised 
-  by HexaPDF and Prawn ruby gems. </p>
-  <p>Based on our findings, we built the PDFEngine as a ruby gem with 99.7% unit test coverage</p>
-  <p>To make sure the generated PDFs are pixel perfect, We built a small snapshot testing tool (using ImageMagick) to create a snapshot of the
-  generated pdf and compares with the baseline version during each integration test run. This helped us to move fast with
-  confidence to enhance / add more reports</p>
+  <p>How liberating is to know how ones’ DNA influences in aging, the ability to lose weight and absorption of micronutrients in your diet.</p>
+
+  <h4>Meet the revolutionary:</h4>
+  <p>With the astronomical rise of such lifestyle diseases, apart from cure through medical intervention, it was very important to develop programs that will assist individuals in modifying their lifestyle based upon thei1r genetic predisposition.</p>
+
+  <p>Genetic Direction was founded in the year 2015  by veterans and thought leaders from the Wellness, health management industries with a mission to understand</p>
+
+  <ul>
+    <li>How specific genes process the carbohydrates, fat, protein and micronutrients</li>
+    <li>How specific genes determine the effectiveness of fitness activities.</li>
+  </ul>
+
+<p>With the advent of genetic testing and advanced study of the human genome, genetic Direction has now made it possible to tailor fitness and health management programs based on genetic predisposition. They have developed a suite of programs to cater to a wide variety of lifestyle challenges, DNA based Weight management program, Healthy aging program, comprehensive micronutrient predisposition analysis.</p>
+
+<p>The process is quite simple with the test kits ordered online, samples sent via mail, sample analysis giving an extensive report on the DNA genotype, report generation and support where the individual gets access to videos, articles, recipes anytime anywhere.</p>
+
+<div class="img-holder">
+    <img src="/images/works/genetic-direction/process.png" width="470" />
+</div>
+
+<h4>Starting out: Report Engine</h4>
+
+<p>Reports of the individual’s genetic makeup were required to be presented in graphical and dynamic content, based on the user’s profile. The users wanted genetic Direction to provide the information in easily accessible PDF reports anytime.</p>
+
+<p>Genetic Direction outsourced PDF generation to a technology partner prior to their association with Tarka Labs. </p>
+
+<h4>Challenges</h4>
+<div class="img-holder"><img src="/images/works/genetic-direction/hurdle.png" width="234" /></div>
+
+<p>Cost per PDF generation was uneconomical as there was an astronomical rise in the customer base and this is a recurring cost.</p>
+<p>Their PDF solution was not optimal as it was very slow and unresponsive during loads.</p>
+<p>All requests for changes in the PDF were very slow and inefficient.</p>
+
+<h4>Discovering Tarka Labs</h4>
+
+<p>Genetic Direction was on the lookout to build a PDF engine and host it themselves to save costs of generating PDFs. The catch here is, as the solution was not readily available and the templates being quite complex (40 - 50 pages) with lots of dynamic data, we proposed to build a proof of concept to assess the feasibility of such an engine that will meet all their needs</p>
+
+<p>After 2 weeks of development effort (2 devs) and constant collaboration with the client with respect to requirements, we had a built a proof of concept engine that met all their possible needs for PDF generation</p>
+
+<h4>Requirements</h4>
+<ul>
+<li>Ability to select a different page for a section based on the user’s DNA profiling info</li>
+<li>Ability to add sliders/indicators (graphic elements) to selected pages based on users DNA profiling info (user traits)</li>
+<li>Adding customized footer and headers (with page numbers)</li>
+<li>Adding pie charts/bar diagrams</li>
+<li>Omitting specific sections based on user’s gender</li>
+</ul>
+
+<p>After validating that a standalone PDF engine is possible, we proposed the estimated cost & duration and kick-started the project with 2 developers (one lead and one junior dev) and completed all the requirements in 5 weeks with 99% unit test coverage and visual functional tests. <br/>
+    <a href="https://medium.com/tarkalabs/automated-testing-of-generated-pdfs-3d9b7d60b188" target="_blank">Read more</a></p>
+
+
+<h4>Tech Stack Used</h4>
+<p>The tech stack choice for PDF engine was Ruby on Rails as it was feasible and easy for their team to maintain & enhance it alongside their existing system.</p>
+<p>So, we built it as a ruby gem (library) and used HexaPDF and Prawn ruby gems (already existing PDF libraries) and rspec for unit testing and functional testing.</p>
+
+<h4>Solution Architecture</h4>
+<p>PDF engine was built to be highly customizable for every document needs. It is controlled by a JSON file which defines all the sections in order and what templates to be used in each section. The template names are variable and are controlled by the user data when generating the report.</p>
+
+<div class="img-holder"><img src="/images/works/genetic-direction/architecture.png" width="470" /></div>
+
+<h4>Customer feedback</h4>
+<blockquote>
+    <p>I want to let you know we are very happy with the work performed by Sudhakar and Prashanth, both in timely execution and quality of code.  I worked with another Indian based consulting firm in the past and I was less than pleased with the code quality.  They wrote a giant monolithic application that was very difficult to make changes to.  I could tell Sudhakar and Prashanth took a thoughtful approach to their solutions and built us a quality application.</p>
+    
+    <span class="blockquote-footer">Micheal Sparks <span class="cite">CTO, Genetic Direction</span></span>
+</blockquote>
+
 <% end %>
 
 <% content_for :members do %>

@@ -895,6 +895,47 @@ img {
     margin-right: 30px;
     line-height: 22px;
     font-size: 16px;
+      
+      & h4{
+          margin: 45px 0 25px;
+      }
+      
+      & .img-holder{
+          text-align: center;
+          margin: 25px 0;
+      }
+      
+      & blockquote{
+          font-size: 18px;
+          line-height: 27px;
+          position: relative;
+          
+          &:after{
+              content: "";
+              background: url(/images/sprite.svg) no-repeat -209px -60px;
+              background-size: 350px;
+              width: 35px;
+              height: 30px;
+              position: absolute;
+              top: -50px;
+              right: 0px;
+              opacity: 0.25;
+          }
+          
+          & p{
+              max-width: 570px;
+          }
+          
+          & .blockquote-footer{
+              font-size: 16px;
+              font-weight: bold;
+              
+              & .cite{
+                  width: 100%;
+                  font-weight: normal;
+              }
+          }
+      }
   }
   & .showcase{
     width: 40%;
@@ -956,6 +997,15 @@ img {
       }
     }
   }
+}
+
+blockquote{
+    margin: 0;
+    font-family: skolar-latin, serif;
+    
+    & > .blockquote-footer{
+        font-family: proxima-nova, sans-serif;
+    }
 }
 
 .about-page{
@@ -1021,8 +1071,6 @@ img {
           margin: 35px 0 50px;
           
           & > blockquote{
-            margin: 0;
-            font-family: skolar-latin, serif;
             line-height: 30px;
           }
           & > .btn-link{
