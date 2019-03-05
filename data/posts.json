@@ -1,5 +1,33 @@
 [
   {
+    "title": "My views on the CKA exam",
+    "author": "Vagmi Mudumbai",
+    "published_at": "Mon, 04 Mar 2019 16:50:03 +0000",
+    "link": "https://medium.com/tarkalabs/my-views-on-the-cka-exam-92a3e59810da",
+    "image": "https://cdn-images-1.medium.com/max/1200/1*u337lr3gd0n6BPsl6tdy_A.png"
+  },
+  {
+    "title": "Demystifying MetaProgramming in Ruby",
+    "author": "Tanmaya Gupta",
+    "published_at": "Fri, 01 Mar 2019 11:55:17 +0000",
+    "link": "https://medium.com/tarkalabs/demystifying-metaprogramming-in-ruby-7ebeff6d7d60",
+    "image": "https://cdn-images-1.medium.com/max/1200/1*ZBc-esUwjZQHapMRmFht8g.jpeg"
+  },
+  {
+    "title": "Railroads to effective communication",
+    "author": "Ramya Raghavan",
+    "published_at": "Sun, 10 Feb 2019 06:11:58 +0000",
+    "link": "https://medium.com/tarkalabs/railroads-to-effective-communication-76c87af2f57e",
+    "image": "https://cdn-images-1.medium.com/max/1200/1*chEMTNwusafGo0adidqdYQ.png"
+  },
+  {
+    "title": "Perfect code is the enemy of becoming a good developer",
+    "author": "Naren",
+    "published_at": "Sun, 29 Apr 2018 10:48:41 +0000",
+    "link": "https://medium.com/tarkalabs/perfect-code-is-the-enemy-of-becoming-a-good-developer-ef15968dfc27",
+    "image": "https://cdn-images-1.medium.com/max/1200/0*pIJ16tXCUNVBY_ap"
+  },
+  {
     "title": "Automating DJI Tello Drone using GOBOT",
     "author": "Rajiv Manivannan",
     "published_at": "Fri, 18 Jan 2019 07:34:25 +0000",
@@ -40,33 +68,5 @@
     "published_at": "Wed, 02 Jan 2019 12:58:02 +0000",
     "link": "https://medium.com/tarkalabs/docker-deployments-to-heroku-5802b14df4fa",
     "image": "https://cdn-images-1.medium.com/max/1200/1*Eedpq2e1wTsO4Mff4XthvQ.png"
-  },
-  {
-    "title": "SSH Recipes in Go — An interlude",
-    "author": "Vagmi Mudumbai",
-    "published_at": "Sun, 16 Dec 2018 15:24:07 +0000",
-    "link": "https://medium.com/tarkalabs/ssh-recipes-in-go-an-interlude-6fa88a03d458",
-    "image": "https://cdn-images-1.medium.com/max/1200/1*FaXLpORfin1uwWNtC-_Ltw.png"
-  },
-  {
-    "title": "Tarka Labs : Version 2.0",
-    "author": "Ramya Raghavan",
-    "published_at": "Fri, 14 Dec 2018 10:14:31 +0000",
-    "link": "https://medium.com/tarkalabs/tarka-labs-version-2-0-c5dbc1652a66",
-    "image": "https://cdn-images-1.medium.com/max/1200/1*mgwr4CpuXZwwMe8k0Bbsfw.gif"
-  },
-  {
-    "title": "Controlling the Docker Engine from Go",
-    "author": "Naren",
-    "published_at": "Wed, 12 Dec 2018 03:02:12 +0000",
-    "link": "https://medium.com/tarkalabs/controlling-the-docker-engine-in-go-826012f9671c",
-    "image": "https://cdn-images-1.medium.com/max/1200/1*eb3oW67gEqonmUEWMjUPfA.png"
-  },
-  {
-    "title": "async / await wrapper for callback style javascript code",
-    "author": "Sudhakar Rayavaram",
-    "published_at": "Tue, 04 Dec 2018 07:41:59 +0000",
-    "link": "https://medium.com/tarkalabs/async-await-wrapper-for-callback-style-javascript-code-cde2b699122f",
-    "image": "https://cdn-images-1.medium.com/max/1200/1*-V7Ga9ukcdfqbl8siU-j6w.png"
   }
 ]
