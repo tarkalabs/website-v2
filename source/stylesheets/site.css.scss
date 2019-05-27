@@ -1172,8 +1172,19 @@ blockquote{
                 z-index: 9;
             }
             
+            &:hover, &.active{
+                & > .hoverImg{
+                    display: inline-block;
+                    
+                    &+.img{display: none;}
+                }
+            }
+            
             & > img{
                 width: 100%;
+                
+                &.img{}
+                &.hoverImg{display: none;}
             }
             & .t-name{
                 display: flex;
@@ -1205,7 +1216,7 @@ blockquote{
                 color: $LighterColor;
                 padding: 50px 30px 30px;
                 position: absolute;
-                top: 293px;
+                top: 358px;
                 z-index: 9;
                 line-height: 25px;
                 

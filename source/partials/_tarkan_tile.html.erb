@@ -1,7 +1,12 @@
 <div class="tarkan">
     <span class="close"></span>
     <a class="nav-handle" name="<%= shortName %>"></a>
-    <img src="/images/team/<%=image%>"/>
+    
+    <% unless imgHover.empty? %>
+        <img class="hoverImg" src="/images/team/<%=image%>-1.jpg"/>
+    <% end %>
+    
+    <img class="img" src="/images/team/<%=image%>.jpg"/>
     <div class="t-name">
         <h3>
             <%= name %>
