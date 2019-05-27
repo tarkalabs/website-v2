@@ -191,6 +191,7 @@ h1 {
 h2 {
   font-weight: lighter;
   font-size: 32px;
+  line-height: 32px;
   color: $BlackColor;
   margin: 0 0 25px;
 }
@@ -1025,18 +1026,18 @@ blockquote{
     min-width: 170px;
     display: inline-block;
 
-    & .label{
+    .label{
       opacity: 0.23;
       font-weight: bold;
       color: $BlackColor;
       line-height: 22px;
     }
-    & ul{
+    ul{
       padding: 0 0 0 30px;
       margin: 10px 0;
 
-      & li{
-        & a{
+      li{
+        a{
           display: inline-block;
           font-size: 16px;
           color: $BlackColor;
@@ -1055,7 +1056,7 @@ blockquote{
       }
     }
   }
-  & .inner-wrapper{
+  .inner-wrapper{
     max-width: 970px;
     margin-left: 200px;
 
@@ -1091,12 +1092,12 @@ blockquote{
     }
   }
     
-    & .tabs{
+    .tabs{
         margin: 0 0 50px;
         display: inline-block;
         width: 100%;
         
-        & li{
+        li{
             width: 270px;
             height: 130px;
             display: flex;
@@ -1145,26 +1146,36 @@ blockquote{
             }
         }
     }
-    & .tab_container{
+    .tab_container{
         min-height: 340px;
         
-        & h3, & p, & ul{
+        h3, p, ul{
             margin: 0 0 25px;
         }
-        & ul li{
+        ul li{
             margin: 0 0 15px;
         }
     }
-    & .tarkans{
+    .tarkans{
         margin: 0 -15px;
-//        width: 100%;
         display: flex;
         flex-wrap: wrap;
         
-        & .tarkan{
+        &.alumni{
+          pointer-events: none;
+
+          .tarkan {
+            .t-name {
+              & > h3, & > h5 {
+                background: #a3a3a3;
+              }
+            }
+          }
+        }
+
+        .tarkan{
             margin: 0 15px 35px;
             width: calc(33.333% - 30px);
-//            min-width: 290px;
             position: relative;
             z-index: 1;
             
@@ -1186,7 +1197,7 @@ blockquote{
                 &.img{}
                 &.hoverImg{display: none;}
             }
-            & .t-name{
+            .t-name{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
@@ -1240,14 +1251,9 @@ blockquote{
   margin: 0;
   padding: 0;
   list-style: none;
-
-    & li {
-      float: left;
-        
-        & a{}
-        &.active,
-        &.active a:hover {}
-    }
+  & li {
+    float: left;
+  }
 }
 
 .tab_container {
@@ -1266,7 +1272,7 @@ blockquote{
 footer{
     margin: 100px 0 0;
     
-  & .container{
+  .container{
     padding: 30px 0;
     font-size: 13px;
 
@@ -1275,7 +1281,6 @@ footer{
         
         & > span{
             width: 33.333%;
-            
             &:last-child{
                 font-size: 16px;
                 text-align: right;
@@ -1285,11 +1290,7 @@ footer{
                     text-align: center;
                     display: inline-block;
                 }
-            }
-            &:first-child{
-                
-            }
-            
+            }            
             &.logo-type{
                 text-align: center;
             }
@@ -1314,14 +1315,14 @@ footer{
             &:first-child{
                 padding-left: 100px;
                 
-                & .heading{
+                .heading{
                     font-family: skolar-latin, serif;
                     font-size: 90px;
                     color: #FFFFFF;
                     line-height: 95px;
                     margin: 0 0 50px;
                 }
-                & p{
+                p{
                     margin: 0;
                     font-size: 16px;
                     margin: 0 0 50px;
