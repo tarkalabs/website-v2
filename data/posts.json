@@ -1,72 +1,72 @@
 [
   {
+    "title": "Dirsh",
+    "author": "Dhruva Sagar",
+    "published_at": "Thu, 13 Jun 2019 17:40:04 +0000",
+    "link": "https://medium.com/tarkalabs/dirsh-5d4650008c65",
+    "image": "https://miro.medium.com/max/1200/1*-JpJXRk1M_I9h4wCI905cg.jpeg"
+  },
+  {
+    "title": "Optimize ZSH",
+    "author": "Dhruva Sagar",
+    "published_at": "Sun, 14 Apr 2019 05:31:25 +0000",
+    "link": "https://medium.com/tarkalabs/optimize-zsh-fce424fcfd5",
+    "image": "https://miro.medium.com/max/1200/1*vzWzeHIePfOxPdexHmrjVg.jpeg"
+  },
+  {
+    "title": "SSH simplified using SSH Config",
+    "author": "Dhruva Sagar",
+    "published_at": "Fri, 12 Apr 2019 02:07:42 +0000",
+    "link": "https://medium.com/tarkalabs/ssh-simplified-using-ssh-config-161406ba75d7",
+    "image": "https://miro.medium.com/max/1200/1*z6tVvVVmPJI1kGQaWoTYNw.jpeg"
+  },
+  {
     "title": "Power of SSH Tunneling",
     "author": "Dhruva Sagar",
     "published_at": "Tue, 09 Apr 2019 06:07:10 +0000",
     "link": "https://medium.com/tarkalabs/power-of-ssh-tunneling-cf82bc56da67",
-    "image": "https://cdn-images-1.medium.com/max/1200/1*kD4yqkswh2iacWi_WSlahA.jpeg"
+    "image": "https://miro.medium.com/max/1200/1*kD4yqkswh2iacWi_WSlahA.jpeg"
   },
   {
     "title": "All in one’s mind.",
     "author": "Ramya Raghavan",
     "published_at": "Sat, 23 Mar 2019 01:36:26 +0000",
     "link": "https://medium.com/tarkalabs/all-in-ones-mind-f3d682d15e8f",
-    "image": "https://cdn-images-1.medium.com/max/1200/1*L6HNRsFbb0v_dA9BeXD7pw.gif"
+    "image": "https://miro.medium.com/freeze/max/1200/1*L6HNRsFbb0v_dA9BeXD7pw.gif"
   },
   {
     "title": "Blockchain Technology and its Magic",
     "author": "Harman Sohanpal",
     "published_at": "Wed, 13 Mar 2019 07:23:39 +0000",
     "link": "https://medium.com/tarkalabs/blockchain-technology-and-its-magic-d24f61f5a7b0",
-    "image": "https://cdn-images-1.medium.com/max/1200/1*j5fE5qVN-FtiSwGX1h_qkw.jpeg"
+    "image": "https://miro.medium.com/max/1200/1*j5fE5qVN-FtiSwGX1h_qkw.jpeg"
   },
   {
     "title": "My views on the CKA exam",
     "author": "Vagmi Mudumbai",
     "published_at": "Mon, 04 Mar 2019 16:50:03 +0000",
     "link": "https://medium.com/tarkalabs/my-views-on-the-cka-exam-92a3e59810da",
-    "image": "https://cdn-images-1.medium.com/max/1200/1*u337lr3gd0n6BPsl6tdy_A.png"
+    "image": "https://miro.medium.com/max/1200/1*u337lr3gd0n6BPsl6tdy_A.png"
   },
   {
     "title": "Demystifying MetaProgramming in Ruby",
     "author": "Tanmaya Gupta",
     "published_at": "Fri, 01 Mar 2019 11:55:17 +0000",
     "link": "https://medium.com/tarkalabs/demystifying-metaprogramming-in-ruby-7ebeff6d7d60",
-    "image": "https://cdn-images-1.medium.com/max/1200/1*ZBc-esUwjZQHapMRmFht8g.jpeg"
-  },
-  {
-    "title": "Railroads to effective communication",
-    "author": "Ramya Raghavan",
-    "published_at": "Sun, 10 Feb 2019 06:11:58 +0000",
-    "link": "https://medium.com/tarkalabs/railroads-to-effective-communication-76c87af2f57e",
-    "image": "https://cdn-images-1.medium.com/max/1200/1*chEMTNwusafGo0adidqdYQ.png"
+    "image": "https://miro.medium.com/max/1200/1*ZBc-esUwjZQHapMRmFht8g.jpeg"
   },
   {
     "title": "Perfect code is the enemy of becoming a good developer",
     "author": "Naren",
     "published_at": "Sun, 29 Apr 2018 10:48:41 +0000",
     "link": "https://medium.com/tarkalabs/perfect-code-is-the-enemy-of-becoming-a-good-developer-ef15968dfc27",
-    "image": "https://cdn-images-1.medium.com/max/1200/0*pIJ16tXCUNVBY_ap"
+    "image": "https://miro.medium.com/max/1200/0*pIJ16tXCUNVBY_ap"
   },
   {
     "title": "Automating DJI Tello Drone using GOBOT",
     "author": "Rajiv Manivannan",
     "published_at": "Fri, 18 Jan 2019 07:34:25 +0000",
     "link": "https://medium.com/tarkalabs/automating-dji-tello-drone-using-gobot-2b711bf42af6",
-    "image": "https://cdn-images-1.medium.com/max/1200/1*rwz4vpm5gvob16XZy-cIbw.png"
-  },
-  {
-    "title": "IoT based Asset Tracking Solution using Particle Asset Tracker Kit",
-    "author": "Rajiv Manivannan",
-    "published_at": "Thu, 10 Jan 2019 12:59:11 +0000",
-    "link": "https://medium.com/tarkalabs/iot-based-asset-tracking-solution-using-particle-asset-tracker-kit-4c3e13a95890",
-    "image": "https://cdn-images-1.medium.com/max/1200/1*ZA_7Aw31oo3bbaNIgfJSWg.png"
-  },
-  {
-    "title": "Code Retreat, coding a break!",
-    "author": "Ramya Raghavan",
-    "published_at": "Tue, 08 Jan 2019 11:10:00 +0000",
-    "link": "https://medium.com/tarkalabs/code-retreat-coding-a-break-a25d79d89c76",
-    "image": "https://cdn-images-1.medium.com/max/1200/1*xlAGNkjZwwIphjbA_U8O1w.jpeg"
+    "image": "https://miro.medium.com/max/1200/1*rwz4vpm5gvob16XZy-cIbw.png"
   }
 ]
