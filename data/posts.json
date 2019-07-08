@@ -1,5 +1,12 @@
 [
   {
+    "title": "PDF Comparison in Pure Ruby",
+    "author": "Jahangir Anwari",
+    "published_at": "Fri, 05 Jul 2019 12:27:52 +0000",
+    "link": "https://medium.com/tarkalabs/pdf-comparison-in-pure-ruby-aba8a6a8f40b",
+    "image": "https://miro.medium.com/max/1200/1*H70-CPl3AC9kc1vNHKlTlw.png"
+  },
+  {
     "title": "Dirsh",
     "author": "Dhruva Sagar",
     "published_at": "Thu, 13 Jun 2019 17:40:04 +0000",
@@ -61,12 +68,5 @@
     "published_at": "Sun, 29 Apr 2018 10:48:41 +0000",
     "link": "https://medium.com/tarkalabs/perfect-code-is-the-enemy-of-becoming-a-good-developer-ef15968dfc27",
     "image": "https://miro.medium.com/max/1200/0*pIJ16tXCUNVBY_ap"
-  },
-  {
-    "title": "Automating DJI Tello Drone using GOBOT",
-    "author": "Rajiv Manivannan",
-    "published_at": "Fri, 18 Jan 2019 07:34:25 +0000",
-    "link": "https://medium.com/tarkalabs/automating-dji-tello-drone-using-gobot-2b711bf42af6",
-    "image": "https://miro.medium.com/max/1200/1*rwz4vpm5gvob16XZy-cIbw.png"
   }
 ]
