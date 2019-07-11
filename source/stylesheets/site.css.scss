@@ -1056,6 +1056,7 @@ blockquote{
       }
     }
   }
+
   .inner-wrapper{
     max-width: 970px;
     margin-left: 200px;
@@ -1092,159 +1093,173 @@ blockquote{
     }
   }
     
-    .tabs{
-        margin: 0 0 50px;
-        display: inline-block;
-        width: 100%;
-        
-        li{
-            width: 270px;
-            height: 130px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
-            &.active{
-                background-image: linear-gradient(46deg, #23307E 0%, #7857A9 100%);
-                
-                & a:after{
-                    filter: brightness(100);
-                }
-            }
-            
-            & a{
-                display: inline-block;
-                
-                &.product_engg, &.consulting, &.coaching{
-                    &:after{
-                        content: "";
-                        background: url("/images/sprite.svg") no-repeat;
-                        background-size: $backgroundSize;
-                        display: inline-block;
-                    }
-                }
-
-                &.product_engg:after{
-                        width: 74px;
-                        height: 73px;
-                        background-position: -251px -111px;
-                }
-                &.consulting:after{
-                        width: 84px;
-                        height: 50px;
-                        background-position: -251px 0px;
-                }
-                &.coaching:after{
-                        width: 57px;
-                        height: 57px;
-                        background-position: -251px -51px;
-                }
-            }
-            
-            &.active{
-                
-            }
-        }
-    }
-    .tab_container{
-        min-height: 340px;
-        
-        h3, p, ul{
-            margin: 0 0 25px;
-        }
-        ul li{
-            margin: 0 0 15px;
-        }
-    }
-    .tarkans{
-        margin: 0 -15px;
+  .tabs{
+    margin: 0 0 50px;
+    display: inline-block;
+    width: 100%;
+    
+    li{
+        width: 270px;
+        height: 130px;
         display: flex;
-        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         
-        &.alumni{
-          pointer-events: none;
-
-          .tarkan {
-            .t-name {
-              & > h3, & > h5 {
-                background: #a3a3a3;
-              }
+        &.active{
+            background-image: linear-gradient(46deg, #23307E 0%, #7857A9 100%);
+            
+            & a:after{
+                filter: brightness(100);
             }
+        }
+        
+        & a{
+            display: inline-block;
+            
+            &.product_engg, &.consulting, &.coaching{
+                &:after{
+                    content: "";
+                    background: url("/images/sprite.svg") no-repeat;
+                    background-size: $backgroundSize;
+                    display: inline-block;
+                }
+            }
+
+            &.product_engg:after{
+                    width: 74px;
+                    height: 73px;
+                    background-position: -251px -111px;
+            }
+            &.consulting:after{
+                    width: 84px;
+                    height: 50px;
+                    background-position: -251px 0px;
+            }
+            &.coaching:after{
+                    width: 57px;
+                    height: 57px;
+                    background-position: -251px -51px;
+            }
+        }
+        
+        &.active{
+            
+        }
+    }
+  }
+
+  .tab_container{
+    min-height: 340px;
+    
+    h3, p, ul{
+        margin: 0 0 25px;
+    }
+    ul li{
+        margin: 0 0 15px;
+    }
+  }
+
+  .tarkans{
+    margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    &.alumni{
+      pointer-events: none;
+
+      .tarkan {
+        width: 20%;
+        .t-name {
+          margin: -40px 10px 0;
+          h3 {
+            font-size: 20px;
+          }
+          h5 {
+            font-size: 14px;
+          }
+          & > h3, & > h5 {
+            background: #a3a3a3;
           }
         }
+      }
+    }
 
-        .tarkan{
-            margin: 0 15px 35px;
-            width: calc(33.333% - 30px);
+    .tarkan{
+        margin: 0 15px 35px;
+        width: calc(33.333% - 30px);
+        position: relative;
+        z-index: 1;
+        
+        & > *{
+            z-index: 9;
+        }
+        
+        &:hover, &.active{
+            & > .hoverImg{
+                display: inline-block;
+                
+                &+.img{display: none;}
+            }
+        }
+        
+        & > img{
+            width: 100%;
+            
+            &.img{}
+            &.hoverImg{display: none;}
+        }
+        .t-name{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: -40px 25px 0;
+            z-index: 10;
             position: relative;
-            z-index: 1;
             
-            & > *{
-                z-index: 9;
-            }
-            
-            &:hover, &.active{
-                & > .hoverImg{
-                    display: inline-block;
-                    
-                    &+.img{display: none;}
-                }
-            }
-            
-            & > img{
-                width: 100%;
-                
-                &.img{}
-                &.hoverImg{display: none;}
-            }
-            .t-name{
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                margin: -40px 25px 0;
-                z-index: 10;
-                position: relative;
-                
-                & > h3, & > h5{
-                    color: $LighterColor;
-                    background:$TertiaryColor;
-                    display: inline-block;
-                    margin: 0;
-                    padding: 6px 10px;
-                }
-                & > h3{
-                    font-weight: bold;
-                    font-size: 22px;
-                }
-                & > h5{
-                    font-size: 16px;
-                    font-weight: 100;
-                }
-            }
-            & .desc{
-                display: none;
-                background: $TertiaryColor;
+            & > h3, & > h5{
                 color: $LighterColor;
-                padding: 50px 30px 30px;
-                position: absolute;
-                top: 358px;
-                z-index: 9;
-                line-height: 25px;
+                background:$TertiaryColor;
+                display: inline-block;
+                margin: 0;
+                padding: 6px 10px;
+            }
+            & > h3{
+                font-weight: bold;
+                font-size: 22px;
+            }
+            & > h5{
+                font-size: 16px;
+                font-weight: 100;
+            }
+        }
+        & .desc{
+            display: none;
+            background: $TertiaryColor;
+            color: $LighterColor;
+            padding: 50px 30px 30px;
+            position: absolute;
+            top: 358px;
+            z-index: 9;
+            line-height: 25px;
+            
+            & .refs{
+                display: inline-block;
+                width: 100%;
+                margin: 30px 0 0 0;
                 
-                & .refs{
+                & a{
+                    color: $LighterColor;
                     display: inline-block;
-                    width: 100%;
-                    margin: 30px 0 0 0;
-                    
-                    & a{
-                        color: $LighterColor;
-                        display: inline-block;
-                        padding: 0 10px 0 0;
-                    }
+                    padding: 0 10px 0 0;
                 }
             }
         }
     }
+  }
+
+  .alumni-header {
+    margin-top: 70px;
+  }
 }
 
 .tabs {
