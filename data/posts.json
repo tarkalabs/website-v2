@@ -1,5 +1,12 @@
 [
   {
+    "title": "How we hire engineers",
+    "author": "Vagmi Mudumbai",
+    "published_at": "Mon, 29 Jul 2019 05:51:11 +0000",
+    "link": "https://medium.com/tarkalabs/how-we-hire-engineers-b7bdfaddb393",
+    "image": "https://miro.medium.com/max/1200/1*kPo-jWfrsT1kpcAPra0uAA.jpeg"
+  },
+  {
     "title": "PDF Comparison in Pure Ruby",
     "author": "Jahangir Anwari",
     "published_at": "Fri, 05 Jul 2019 12:27:52 +0000",
@@ -61,12 +68,5 @@
     "published_at": "Fri, 01 Mar 2019 11:55:17 +0000",
     "link": "https://medium.com/tarkalabs/demystifying-metaprogramming-in-ruby-7ebeff6d7d60",
     "image": "https://miro.medium.com/max/1200/1*ZBc-esUwjZQHapMRmFht8g.jpeg"
-  },
-  {
-    "title": "Perfect code is the enemy of becoming a good developer",
-    "author": "Naren",
-    "published_at": "Sun, 29 Apr 2018 10:48:41 +0000",
-    "link": "https://medium.com/tarkalabs/perfect-code-is-the-enemy-of-becoming-a-good-developer-ef15968dfc27",
-    "image": "https://miro.medium.com/max/1200/0*pIJ16tXCUNVBY_ap"
   }
 ]
