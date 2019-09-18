@@ -1,5 +1,12 @@
 [
   {
+    "title": "My thoughts on Flutter",
+    "author": "Vagmi Mudumbai",
+    "published_at": "Wed, 18 Sep 2019 15:05:57 +0000",
+    "link": "https://medium.com/tarkalabs/my-thoughts-on-flutter-10d0922d35da",
+    "image": "https://miro.medium.com/max/1200/1*q_obyf4OI-S-Ghr3nM2txA.jpeg"
+  },
+  {
     "title": "How we hire engineers",
     "author": "Vagmi Mudumbai",
     "published_at": "Mon, 29 Jul 2019 05:51:11 +0000",
@@ -46,14 +53,14 @@
     "author": "Ramya Raghavan",
     "published_at": "Sat, 23 Mar 2019 01:36:26 +0000",
     "link": "https://medium.com/tarkalabs/all-in-ones-mind-f3d682d15e8f",
-    "image": "https://miro.medium.com/freeze/max/1200/1*L6HNRsFbb0v_dA9BeXD7pw.gif"
+    "image": "https://miro.medium.com/freeze/max/480/1*L6HNRsFbb0v_dA9BeXD7pw.gif"
   },
   {
     "title": "Blockchain Technology and its Magic",
     "author": "Harman Sohanpal",
     "published_at": "Wed, 13 Mar 2019 07:23:39 +0000",
     "link": "https://medium.com/tarkalabs/blockchain-technology-and-its-magic-d24f61f5a7b0",
-    "image": "https://miro.medium.com/max/1200/1*j5fE5qVN-FtiSwGX1h_qkw.jpeg"
+    "image": "https://miro.medium.com/max/465/1*j5fE5qVN-FtiSwGX1h_qkw.jpeg"
   },
   {
     "title": "My views on the CKA exam",
@@ -61,12 +68,5 @@
     "published_at": "Mon, 04 Mar 2019 16:50:03 +0000",
     "link": "https://medium.com/tarkalabs/my-views-on-the-cka-exam-92a3e59810da",
     "image": "https://miro.medium.com/max/1200/1*u337lr3gd0n6BPsl6tdy_A.png"
-  },
-  {
-    "title": "Demystifying MetaProgramming in Ruby",
-    "author": "Tanmaya Gupta",
-    "published_at": "Fri, 01 Mar 2019 11:55:17 +0000",
-    "link": "https://medium.com/tarkalabs/demystifying-metaprogramming-in-ruby-7ebeff6d7d60",
-    "image": "https://miro.medium.com/max/1200/1*ZBc-esUwjZQHapMRmFht8g.jpeg"
   }
 ]
