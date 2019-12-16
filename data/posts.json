@@ -1,5 +1,12 @@
 [
   {
+    "title": "Getting started with Development in Quantum Computing",
+    "author": "Utkarsh Mehta",
+    "published_at": "Sun, 15 Dec 2019 17:38:16 +0000",
+    "link": "https://medium.com/tarkalabs/getting-started-with-development-in-quantum-computing-3eed007dcee0",
+    "image": "https://miro.medium.com/max/1200/1*J3ecPsbUzB8jQPmrTFQ-Kg.jpeg"
+  },
+  {
     "title": "Know Kubernetes — Pictorially",
     "author": "Sudhakar Rayavaram",
     "published_at": "Mon, 11 Nov 2019 09:30:43 +0000",
@@ -61,12 +68,5 @@
     "published_at": "Thu, 04 Apr 2019 15:19:28 +0000",
     "link": "https://medium.com/tarkalabs/all-in-ones-mind-f3d682d15e8f",
     "image": "https://miro.medium.com/freeze/max/480/1*L6HNRsFbb0v_dA9BeXD7pw.gif"
-  },
-  {
-    "title": "Blockchain Technology and its Magic",
-    "author": "Harman Sohanpal",
-    "published_at": "Wed, 13 Mar 2019 07:23:39 +0000",
-    "link": "https://medium.com/tarkalabs/blockchain-technology-and-its-magic-d24f61f5a7b0",
-    "image": "https://miro.medium.com/max/465/1*j5fE5qVN-FtiSwGX1h_qkw.jpeg"
   }
 ]
