@@ -1,5 +1,19 @@
 [
   {
+    "title": "Getting started with Development in Quantum Computing",
+    "author": "Utkarsh Mehta",
+    "published_at": "Sun, 15 Dec 2019 17:38:16 +0000",
+    "link": "https://medium.com/tarkalabs/getting-started-with-development-in-quantum-computing-3eed007dcee0",
+    "image": "https://miro.medium.com/max/1200/1*J3ecPsbUzB8jQPmrTFQ-Kg.jpeg"
+  },
+  {
+    "title": "Know Kubernetes — Pictorially",
+    "author": "Sudhakar Rayavaram",
+    "published_at": "Mon, 11 Nov 2019 09:30:43 +0000",
+    "link": "https://medium.com/tarkalabs/know-kubernetes-pictorially-f6e6a0052dd0",
+    "image": "https://miro.medium.com/max/1200/1*eHVk7p4I2LuSnVwvYaHbyw.png"
+  },
+  {
     "title": "My thoughts on Flutter",
     "author": "Vagmi Mudumbai",
     "published_at": "Wed, 18 Sep 2019 15:05:57 +0000",
@@ -16,14 +30,14 @@
   {
     "title": "PDF Comparison in Pure Ruby",
     "author": "Jahangir Anwari",
-    "published_at": "Fri, 05 Jul 2019 12:27:52 +0000",
+    "published_at": "Fri, 05 Jul 2019 18:05:51 +0000",
     "link": "https://medium.com/tarkalabs/pdf-comparison-in-pure-ruby-aba8a6a8f40b",
     "image": "https://miro.medium.com/max/1200/1*H70-CPl3AC9kc1vNHKlTlw.png"
   },
   {
     "title": "Dirsh",
     "author": "Dhruva Sagar",
-    "published_at": "Thu, 13 Jun 2019 17:40:04 +0000",
+    "published_at": "Thu, 13 Jun 2019 17:40:06 +0000",
     "link": "https://medium.com/tarkalabs/dirsh-5d4650008c65",
     "image": "https://miro.medium.com/max/1200/1*-JpJXRk1M_I9h4wCI905cg.jpeg"
   },
@@ -37,36 +51,22 @@
   {
     "title": "SSH simplified using SSH Config",
     "author": "Dhruva Sagar",
-    "published_at": "Fri, 12 Apr 2019 02:07:42 +0000",
+    "published_at": "Fri, 12 Apr 2019 02:07:43 +0000",
     "link": "https://medium.com/tarkalabs/ssh-simplified-using-ssh-config-161406ba75d7",
     "image": "https://miro.medium.com/max/1200/1*z6tVvVVmPJI1kGQaWoTYNw.jpeg"
   },
   {
     "title": "Power of SSH Tunneling",
     "author": "Dhruva Sagar",
-    "published_at": "Tue, 09 Apr 2019 06:07:10 +0000",
+    "published_at": "Tue, 09 Apr 2019 06:08:20 +0000",
     "link": "https://medium.com/tarkalabs/power-of-ssh-tunneling-cf82bc56da67",
     "image": "https://miro.medium.com/max/1200/1*kD4yqkswh2iacWi_WSlahA.jpeg"
   },
   {
     "title": "All in one’s mind.",
     "author": "Ramya Raghavan",
-    "published_at": "Sat, 23 Mar 2019 01:36:26 +0000",
+    "published_at": "Thu, 04 Apr 2019 15:19:28 +0000",
     "link": "https://medium.com/tarkalabs/all-in-ones-mind-f3d682d15e8f",
     "image": "https://miro.medium.com/freeze/max/480/1*L6HNRsFbb0v_dA9BeXD7pw.gif"
-  },
-  {
-    "title": "Blockchain Technology and its Magic",
-    "author": "Harman Sohanpal",
-    "published_at": "Wed, 13 Mar 2019 07:23:39 +0000",
-    "link": "https://medium.com/tarkalabs/blockchain-technology-and-its-magic-d24f61f5a7b0",
-    "image": "https://miro.medium.com/max/465/1*j5fE5qVN-FtiSwGX1h_qkw.jpeg"
-  },
-  {
-    "title": "My views on the CKA exam",
-    "author": "Vagmi Mudumbai",
-    "published_at": "Mon, 04 Mar 2019 16:50:03 +0000",
-    "link": "https://medium.com/tarkalabs/my-views-on-the-cka-exam-92a3e59810da",
-    "image": "https://miro.medium.com/max/1200/1*u337lr3gd0n6BPsl6tdy_A.png"
   }
 ]
