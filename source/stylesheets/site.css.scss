@@ -106,6 +106,10 @@ button.btn {
   display: inline-block;
   transition: all 0.2s;
 
+  &:focus{
+    box-shadow: 10px 10px 20px 0px rgba($PrimaryColor,0.3);
+  }
+
   &.btn-primary {
     background: $PrimaryColor;
     color: $LighterColor;
@@ -1261,6 +1265,87 @@ footer{
             }
         }
     }
+}
+
+.new-project{
+  display: flex;
+
+  & .side-heading{
+    max-width: 370px;
+    position: fixed;
+
+    & .section-heading{
+      flex-direction: column;
+
+      & h1{
+        line-height: 57px;
+        margin-bottom: 15px;
+
+        &:last-child{
+          margin-bottom: 30px;
+        }
+      }
+
+      &+p{
+        max-width: 270px;
+      }
+    }
+  }
+
+  & .wrapper{
+    flex: 1;
+    margin-left: 370px;
+
+    & form{
+      max-width: 570px;
+      margin: 130px 0;
+
+      & .form-group{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 0 30px;
+        opacity: .35;
+
+        &.filled{
+          opacity: 1;
+        }
+        &.focus{
+          opacity: 1;
+        }
+
+        & label{
+          font-size: 16px;
+          color: $BlackColor;
+          line-height: 22px;
+        }
+        & input{
+          border: none;
+          border-bottom: 1px solid $BlackColor;
+          outline: none;
+          font-size: 18px;
+          padding: 5px 0;
+
+          &:focus{
+            border-bottom: 1px solid $SecondaryColor;
+
+            & + label{
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      & .form-footer{
+        display: flex;
+        flex-direction: row-reverse;
+
+        & button[type="submit"]{
+          min-width: 185px;
+          margin-left: 30px;
+        }
+      }
+    }
+  }
 }
 
 

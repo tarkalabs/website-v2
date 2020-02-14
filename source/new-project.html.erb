@@ -1,0 +1,83 @@
+---
+title: About - Tarka Labs
+---
+
+<%= partial "./partials/header" %>
+
+<div class="page">
+    <div class="container new-project">
+
+        <div class="side-heading">
+        <div class="section-heading">
+            <h1>
+                Let us build something awesome together.
+            </h1>
+            <h1>
+                Get in touch.
+            </h1>
+        </div>
+
+        <p>If you're here, it means you want to start a journey. We would love to get to know you and take you on that journey. We'll be perfect for each other - You'll see...</p>
+    </div>
+
+    <div class="wrapper">
+        <form>
+            <span class="form-group focus">
+                <input type="text" name="name" autofocus="true"/>
+                <label>What is your organization's name?</label>
+            </span>
+            <span class="form-group">
+                <input type="text" name="name"/>
+                <label>What is your name?</label>
+            </span>
+            <span class="form-group">
+                <input type="text" name="name"/>
+                <label>What is your email address?</label>
+            </span>
+            <span class="form-group">
+                <input type="text" name="name"/>
+                <label>What is your phone number?</label>
+            </span>
+            <span class="form-group">
+                <input type="text" name="name"/>
+                <label>Where are you located? (City, Country)</label>
+            </span>
+            <span class="form-group">
+                <input type="text" name="name"/>
+                <label>What can Tarka Labs do for you?</label>
+            </span>
+            <span class="form-group">
+                <input type="text" name="name"/>
+                <label>What is your budget?</label>
+            </span>
+            <span class="form-group">
+                <input type="text" name="name"/>
+                <label>How did you hear about us?</label>
+            </span>            
+            
+            <div class="form-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-link">Clear</button>
+            </div>
+        </form>
+    </div>
+
+    </div>    
+</div>
+
+<%= partial "./partials/footer" %>
+
+<script>
+$(document).ready(function(){
+    $('.form-group input').focus(function(){
+        $(this).parent().addClass('focus');
+    })
+    $('.form-group input').blur(function(){
+        if(this.value.length == 0){
+            $(this).parent().removeClass('focus');
+        }
+    })
+    
+});
+
+</script>
