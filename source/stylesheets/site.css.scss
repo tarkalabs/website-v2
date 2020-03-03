@@ -908,6 +908,10 @@ img {
       & .img-holder{
           text-align: center;
           margin: 25px 0;
+          p {
+            margin: 5px;
+            font-size: 0.9rem;
+          }
       }
       
       & ul{
