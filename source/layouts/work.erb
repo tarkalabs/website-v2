@@ -2,11 +2,11 @@
 title: Works - Tarka Labs
 ---
 
-<div class="mobile-hide">
+<% wrap_layout :layout do %>
+
+  <div class="mobile-hide">
     <%= partial "./partials/header" %>
 </div>
-
-<% wrap_layout :layout do %>
 <div class="project-detail-hero desktop-hide">
     <a class="back-link" href="/works">Works</a>
     <img src="/images/works/<%= current_page.data.img_name %>-t.png"/>

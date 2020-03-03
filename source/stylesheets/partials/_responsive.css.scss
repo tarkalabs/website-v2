@@ -258,9 +258,9 @@
     
     .project-detail-hero{
         & > .back-link{
-            margin: 15px 0 -37px 15px;
+            margin: 15px;
             filter: brightness(100);
-            position: relative;
+            position: absolute;
         }
         
         &+.page{
