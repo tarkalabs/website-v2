@@ -148,6 +148,45 @@
                 padding-bottom: 55px;
             }
         }
+        
+        & .testimonials{
+            & .who, & .what{
+                width: 100%;
+                position: relative;
+                
+                & .count{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+                
+                & .toggle-btns{
+                    position: absolute;
+                    z-index: 9;
+                    right: 0;
+                    top: -35px;
+                }
+            }
+            & .who .pic{
+                height: 150px;
+            }
+            & .what .testi-quote, & .who .pic{
+                width: 100%;
+                margin: 0;
+                
+                & .photo{
+                    left: 30px;
+                }
+                
+                & .position, & .name{
+                    padding-left: 70px;
+                }
+            }
+            
+            & .what .testi-quote .quote{
+                margin-left: 0;
+            }
+        }
     }
     .page{
         margin: 80px 0;
